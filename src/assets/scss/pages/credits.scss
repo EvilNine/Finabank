@@ -1,0 +1,123 @@
+.credits__nav {
+    border-bottom: 1px solid $form-border;
+    padding-bottom: 1.625rem;
+    margin-bottom: 1.625rem;
+    &-item {
+        font-weight: $font-weight-bold;
+        color: $text-color2;
+        font-size: .813rem;
+        text-transform: uppercase;
+        margin-right: 30px;
+        white-space: nowrap;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $theme-primary;
+        }
+        &.active {
+            color: $theme-primary;
+        }
+    }
+}
+
+.credits__view {
+    &-title {
+        font-size: 1.75rem;
+    }
+    &-bank {
+        background-color: $info;
+        border-radius: 4px;
+        padding: .188rem .375rem;
+        font-size: .75rem;
+    }
+    
+    &-img {
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden;
+        @media (max-width: 575px) {
+            border-radius: 12px;
+        }
+        img {
+            width: 100%;
+
+        }
+    }
+    &-buttons {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        &:before {
+            background: $white;
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: .75;
+        }
+        & > * {
+            position: relative;
+        }
+        @media (max-width: 420px) {
+            & > .btn {
+                font-size: .875rem;
+                height: 2rem;
+                padding: 0.35rem 0.925rem; 
+            }
+        }
+        @media (max-width: 380px) {
+            & > .btn {
+                font-size: .75rem;
+                height: 1.625rem;
+                padding: .25rem .625rem; 
+            }
+        }
+    }
+    &-field {
+        .field {
+            &__img {
+                width: 62px;
+                height: 60px;
+                flex: 0 0 62px;
+                @media (max-width: 575px) {
+                    width: 46px;
+                    height: 48px;
+                    flex: 0 0 46px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            &__content {
+                &-title {
+                    font-size: 1.125rem;
+                    font-weight: $font-weight-semibold;
+                    color: $gray-700;
+                    @media (max-width: 575px) {
+                        font-size: .75rem;
+                    }
+                }
+                &-num {
+                    font-size: 1.5rem;
+                    color: $black;
+                    font-weight: $font-weight-bold;
+                    @media (max-width: 575px) {
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.solution__links {
+    .btn__view-all {
+        & ~ .row {
+            display: none;
+        }
+    }
+}

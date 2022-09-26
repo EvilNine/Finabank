@@ -1,0 +1,40 @@
+.search__form {
+    position: relative;
+    width: 100%;
+    margin-right: 6px;
+    &-input {
+        
+        &:valid, &:focus {
+            
+            & + .search__form-btn {
+                left: 100%;
+                transform: translateX(-100%);
+            }
+        }
+    }
+    &-btn {
+        background: transparent;
+        border: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 0 20px;
+        transition: $transition-base;
+        &:focus {
+            outline: none;
+        }
+        svg {
+            fill: $icon-color;
+        }
+    }
+}
+
+.search__field {
+    position: relative;
+    svg {
+        position: absolute;
+        left: 1.25rem;
+        top: 14px;
+    }
+}

@@ -1,0 +1,85 @@
+.article__nav {
+    @media (max-width: 991px) {
+        margin: -27px -14px 0;
+        display: flex;
+    }
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+    &-section {
+        background: $bg;
+        position: relative;
+        margin-bottom: 1.5rem;
+        @media (min-width: 992px) {
+            border-radius: 12px;
+            box-shadow: 0px 2px 4px $tag-shadow;
+            overflow: hidden;
+        }
+        @media (max-width: 991px) {
+            width: 50%;
+            flex: 0 0 50%;
+            border-left: 1px solid $article-nav-border;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+    }
+    &-title {
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &.show svg {
+            transform: rotate(180deg);
+        }
+        svg {
+            fill: $article-nav-color;
+        }
+        // @media (max-width: 991px) {
+        //     font-size: .875rem;
+        // }
+    }
+    &-link {
+        border-top: 1px solid $article-nav-border;
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        color: $article-nav-color;
+        font-weight: $font-weight-medium;
+        transition: $transition-color;
+        &:hover, &.active {
+            text-decoration: none;
+            color: $article-nav-active;
+            .article__nav-icon {
+                svg {
+                    fill: $article-nav-active;
+                }
+            }
+        }
+    }
+    &-icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            display: block;
+            fill: $article-nav-icon;
+            transition: $transition-fill;
+        }
+    }
+    &-wrap {
+        border-radius: 0;
+        @media (min-width: 992px) {
+            display: block !important;
+            position: relative;
+            border: 0;
+        }
+        @media (max-width: 991px) {
+            border-color: $article-nav-border;
+            
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.table__component {
+    @media (max-width: 767px) {
+        margin: 0 -14px;
+    }
+    .table__title {
+        
+    }
+    table {
+        background: $table-bg;
+        border-radius: 12px;
+        box-shadow: 0px 2px 4px $tag-shadow;
+        width: 100%;
+        border-collapse: collapse;
+        @media (max-width: 767px) {
+            border-radius: 0;
+            margin-bottom: 1.25rem;
+        }
+        thead {
+            @media (max-width: 767px) {
+                display: none;
+            }    
+        }
+        th {
+            padding: 1rem 1.125rem;
+            font-weight: $font-weight-normal;
+            border-left: 1px solid $table-border;
+            text-align: left;
+            color: $table-th-color;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+        tr {
+            &.tr__hidden {
+                display: none;
+            }
+            td {
+                padding: 1rem 1.125rem;
+                border-top: 1px solid $table-border;
+                border-left: 1px solid $table-border;
+                color: $table-color;
+                &:first-child {
+                    border-left: 0;
+                }
+                a {
+                    color: $primary;
+                }
+                &.td__min {
+                    @media (min-width: 768px) {
+                        width: 1%;
+                    }  
+                }
+                &.td__num {
+                    @media (min-width: 768px) {
+                        text-align: center;  
+                    }  
+                    
+                }
+            }
+            &:last-child {
+                td {
+                    border-bottom: 0;
+                    // &:last-child {
+                    //     border-bottom: 1px solid $table-border;
+                    // }
+                }
+                
+            } 
+            @media (max-width: 767px) {
+                display: flex;
+                flex-flow: row wrap;
+                &:first-child {
+                    td:first-child {
+                        border-top: 0;
+                        &.td__num + td {
+                            border-top: 0;
+                        }
+                    }
+                }
+                td {
+                    display: block;
+                    width: 100%;
+                    border-left: 0;
+                    &:first-child {
+                        border-bottom: 1px solid $table-border;
+                        & + td.td__leaders {
+                            padding-top: .875rem;
+                        }
+                    }
+                    &.td__num {
+                        border-left: 1px solid $table-border;
+                        order: 2;
+                        margin-bottom: 0.5rem;
+                        flex: 0 0 1%;
+                        padding: 0px 1.18rem;
+                        display: flex;
+                        align-items: center;
+                        &::before {
+                            content: '№';
+                        }
+                        & + td {
+                            order: 1;
+                            flex: 1;
+                            border-top: 1px solid $table-border;
+                            border-bottom: 1px solid $table-border;
+                            margin-bottom: 0.5rem;
+                        }
+                        & ~ .td__leaders {
+                            order: 3;
+                        }
+                    }
+                    &.td__leaders {
+                        align-items: baseline;
+                        display: flex;
+                        flex-wrap: wrap;
+                        line-height: 1;
+                        border-top: 0;
+                        padding: .313rem 1rem;
+                        
+                        &:last-child {
+                            
+                            padding-bottom: 1rem;
+                        }
+                        &::before {
+                            border-bottom: 1px dashed $leader-dots;
+                            content: "";
+                            flex-grow: 1;
+                            height: 1em;
+                            order: 2;
+                            margin: 0 10px;
+                        }
+                        .table__title {
+                            color: $table-color;
+                            font-weight: $font-weight-semibold;
+                            font-size: .875rem;
+                        }
+                        .table__value {
+                            color: $leader-val;
+                            order: 3;
+                            font-size: .875rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}

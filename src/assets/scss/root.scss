@@ -1,0 +1,452 @@
+:root[data-theme="light"] {
+    --body-bg:                     #F5F9FA;
+    --bg:                          #ffffff;
+    --theme-primary:               #2AD3C8;
+    --theme-on-primary:            #ffffff;
+    --active-color:                #F7C206;
+    --text-color1:                 #26354B;
+    --text-color2:                 #647087;
+    --text-color3:                 #A7ADBC;
+    --link-color-active:           #009DB2;
+    --logo:                        #2AD3C8;
+    --logo-title:                  #26354B;
+    --form-bg:                     #ffffff;
+    --form-border:                 #D4D7DD;
+    --input-color:                 #B9BDC6;
+    --icon-color:                  #7B879D;
+    --primary-bg:                  #2AD3C8;
+    --primary-border:              #2AD3C8;
+    --primary-color:               #ffffff;
+    --primary-outline-bg:          #ffffff;
+    --primary-outline-border:      #2AD3C8;
+    --primary-outline-color:       #26354B;
+    --primary-outline-hover-bg:    #2AD3C8;
+    --primary-outline-hover-color: #ffffff;
+
+    
+
+    --footer-link:              #626B84;
+    --footer-icon-bg:           #F4F6F6;
+    --footer-text-color:        #26354B;
+    --footer-border:            #E3E8E8;
+    --footer-social-color:      #909EAD;
+
+    --light-outline-bg:         #ffffff;
+    --light-outline-border:     #9CA3AF;
+    --light-outline-color:      #9CA3AF;
+
+    --gray-outline-bg:          #ffffff;
+    --gray-outline-border:      #DDDDE4;
+    --gray-outline-color:       #626B84;
+
+    --border-color:             #DDDDE4;
+
+    --alternative-bg:           transparent;
+    --alternative-border:       #7B879D;
+    --alternative-color:        #647087;
+    --alternative-color-hover:  #14B8AD;
+    --alternative-bg-hover:     #ffffff;
+
+    --compare-color:            #626B84;
+
+    --dropdown-color:           #26354B;
+    --dropdown-border:          #DDDDE4;
+    --dropdown-bg:              #ffffff;
+    --dropdown-icon:            #9CA3AF;
+
+    --overlay-bg:               #26354B;
+    
+    --arrow-bg:                 #ffffff;
+    --arrow-border:             #ffffff;   
+    --arrow-color:              #26354B;
+
+    --tns-pag-bg:               #B9BDC6;
+    --tns-pag-bg-active:        #14B8AD;
+    --tns-slider-overlay:       #E8F0F3;
+
+    --header-bg:                #ffffff;
+    --header-icon:              #9CA3AF;
+    --header-color:             #626B84;
+    --header-color-active:      #14B8AD;
+    --header-links-bg:          #FFFFFF;
+    --header-links-border:      #C7D1D0;
+    --header-border:            #E3E8E8;
+
+    --pagination-bg:            #ffffff;
+    --pagination-border:        #ffffff;
+    --pagination-color:         #626B84;
+    --pagination-border-active: #14B8AD;
+    --pagination-description:   #9CA3AF;
+
+    --tag-bg:                   #FFFFFF;
+    --tag-bg-disabled:          #F5F9FA;
+    --tag-shadow:               #E0E5E8;
+    --tag-icon:                 #2AD3C8;
+    --tag-border:               #ffffff;
+    --tag-border-active:        #DDDDE4;
+    --tag-hover:                #F7C206;
+    --tag-color:                #626B84;
+    --tag-color-hover:          #26354B;
+    --tag-color-disabled:       #9CA3AF;
+    --tag-border-primary:       #14B8AD;
+
+    --btn-primary-bg:           #14B8AD;
+    --btn-primary-border:       #14B8AD;
+    --btn-primary-color:        #ffffff;
+
+    --btn-light-bg:             #ffffff;
+    --btn-light-border:         #ffffff;
+    --btn-light-color:          #26354B;
+
+    --btn-gray-bg:             #F1F4F3;
+    --btn-gray-border:         #F1F4F3;
+    --btn-gray-color:          #14B8AD;
+    --btn-gray-border-hover:   #14B8AD;
+
+    --tab-bg-active:            #14B8AD;
+    --tab-color:                #626B84;
+    --tab-color-active:         #ffffff;
+
+    --tag-simple-border:        #9CA3AF;
+    --tag-simple-border-active: #14B8AD;
+    --tag-simple-bg:            #ffffff;
+    --tag-simple-color:         #626B84;
+    --tag-simple-shadow:        #ffffff;
+
+    --card-bg:                  #ffffff;
+    --card-border:              #ffffff;
+    --card-border-hover:        #F7C206;
+    --card-shadow:              #E0E5E8;
+    --card-icon:                #9CA3AF;
+
+    --range-bg:                 #E2E7EE;
+    --range-active:             #F7C206;
+    --range-value-border:       #DDDDE4;
+    --range-value-color:        #26354B;
+    --label-color:              #626B84;
+
+    --arrow-nav-bg:             #ffffff;
+    --arrow-nav-border:         #DDDDE4;
+    --arrow-nav-color:          #626B84;
+    --arrow-nav-shadow:         #d7d7d7;
+
+    --table-bg:                 #ffffff;
+    --table-border:             #DFDFE6;
+    --table-color:              #626B84;
+    --table-th-color:           #26354B;
+
+    --leader-color:             #626B84;
+    --leader-val:               #26354B;
+    --leader-dots:              #A7ADBC;
+
+    --vacancy-title-color:      #26354B;
+    --vacancy-description-color:#626B84;
+    --vacancy-active:           #14B8AD;
+    --btn-vacancy-bg:           #ffffff;
+    --btn-vacancy-color:        #626B84;
+    --btn-vacancy-border:       #9CA3AF;
+    --btn-vacancy-active-bg:    #ffffff;
+    --btn-vacancy-active-border:#14B8AD;
+
+    --select-bg:                #ffffff;
+    --select-border:            #DDDDE4;
+    --select-color:             #9CA3AF;
+
+    --input-bg:                 #ffffff;
+    --input-border:             #DDDDE4; 
+    --input-color:              #9CA3AF;
+    --input-error:              #F64D4D;
+
+    --checkbox-bg:              #ffffff;
+    --checkbox-bg-active:       #14B8AD;
+    --checkbox-border:          #DDDDE4;
+    --checkbox-border-active:   #009DB2;
+    --checkbox-icon:            #ffffff;
+    --checkbox-color:           #626B84;
+
+    --multipleSelect-bg:        #FFFFFF;
+    --multipleSelect-border:    #DDDDE4;
+    --multipleSelect-color:     #626B84;
+    
+    --sidebar-filter-bg:        #ffffff;
+    --sidebar-filter-dropdown:  #FAFCFD;
+    --sidebar-filter-border:    #DFDFE6;
+    --sidebar-filter-color:     #26354B;
+    --sidebar-filter-icon:      #9CA3AF;
+
+    --sidebar-tab-bg:           #ffffff;
+    --sidebar-tab-color:        #626B84;
+    --sidebar-tab-border:       #9CA3AF;
+    --sidebar-tab-bg-active:    #14B8AD;
+    --sidebar-tab-color-active: #ffffff;
+    --sidebar-tab-border-active:#9CA3AF;
+
+    --article-nav-border:       #E3E8E8;
+    --article-nav-color:        #52616F;
+    --article-nav-icon:         #52616F;
+    --article-nav-active:       #14B8AD;
+    --article-tag-bg:           #FFFFFF;
+    --article-tag-color:        #26354B;
+    --article-content-bg:       #F6F6F6;
+    --article-text-color:       #5E6E6D;
+    --article-badge-bg:         #E8F8F7;
+    --article-badge-color:      #26354B;
+    --article-total-color:      #909EAD;
+
+    --progress-danger:          #E15656;
+    --progress-success:         #2FB283;
+    --progress-warning:         #F7C206;
+
+    --tooltip-bg:               #ffffff;
+    --tooltip-color:            #26354B;
+    --tooltip-border:           #14B8AD;
+    --tip-bg:                   #14B8AD;
+    --tip-color:                #ffffff;
+    --tip-count-bg:             #ffffff;
+
+    --scrollbar-bg:             #F5F9FA;
+    --scrollbar-track:          #2FB283;
+
+    --multiselect-border:       #9CA3AF;
+
+    --card-title:               #9CA3AF;
+    --card-description:         #26354B;
+
+    --h3-color:                 #26354B;
+
+    --primary:          #14B8AD;
+    --primary-hover:    #18DCD0;
+    --secondary:        #009DB2;
+    --info:             #D8E3F3;
+    --danger:           #F64D4D;
+    --warning:          #F7C206;
+    --black:            #26354B;
+    --white:            #FFFFFF;
+    --gray-700:         #626B84;
+    --gray-600:         #9CA3AF;
+    --gray-500:         #DDDDE4;
+    --gray-400:         #E8F0F3;
+    --gray-300:         #F5F9FA;
+    --gray-200:         #FAFCFD;
+    
+}   
+:root[data-theme="dark"] {
+    --body-bg:                  #292E38;
+    --bg:                       #343B49;
+    --active-color:             #F7C206;
+
+    --logo-title:               #FFFFFF;
+    --header-bg:                #343B49;
+    --header-icon:              #BFC9D9;
+    --header-color:             #BFC9D9;
+    --header-color-active:      #05B8D1;
+    --header-links-bg:          #475164;
+    --header-links-border:      #7B8AA3;
+    --header-border:            #475164;
+
+    --arrow-bg:                 #343B49;
+    --arrow-border:             #475164;   
+    --arrow-color:              #7B8AA3;
+
+    --arrow-nav-bg:             #343B49;
+    --arrow-nav-border:         #475164;
+    --arrow-nav-color:          #7B8AA3;
+    --arrow-nav-shadow:         #1b1e24;
+
+    --tns-pag-bg:               #343B49;
+    --tns-pag-bg-active:        #F7C206;
+    --tns-slider-overlay:       #343B49;
+    
+    --tab-bg-active:            #05B8D1;
+    --tab-color:                #7B8AA3;
+    --tab-color-active:         #ffffff;
+
+    --tag-bg:                   #343B49;
+    --tag-bg-disabled:          #292E38;
+    --tag-shadow:               #212931;
+    --tag-icon:                 #7B8AA3;
+    --tag-border:               #343B49;
+    --tag-border-active:        #05B8D1;
+    --tag-hover:                #05B8D1;
+    --tag-color:                #7B8AA3;
+    --tag-color-hover:          #05B8D1;
+    --tag-color-disabled:       #9CA3AF;
+    --tag-border-primary:       #05B8D1;
+    
+
+    --tag-simple-border:        #475164;
+    --tag-simple-border-active: #7B8AA3;
+    --tag-simple-bg:            #475164;
+    --tag-simple-color:         #BFC9D9;
+    --tag-simple-shadow:        #212931;
+
+    --card-bg:                  #3B4353;
+    --card-border:              #3B4353;
+    --card-border-hover:        #F7C206;
+    --card-shadow:              #212931;
+    --card-icon:                #7B8AA3;
+
+    --range-bg:                 #475164;
+    --range-active:             #F7C206;
+    --range-value-border:       #475164;
+    --range-value-color:        #ffffff;
+    --label-color:              #BFC9D9;
+
+    --text-color1:              #26354B;
+    --text-color2:              #BFC9D9;
+    --text-color3:              #A7ADBC;
+    --footer-link:              #BFC9D9;
+    --footer-icon-bg:           #475164;
+    --footer-text-color:        #BFC9D9;
+    --footer-border:            #475164;
+    --footer-social-color:     #7B8AA3;
+
+    --btn-primary-bg:           #05B8D1;
+    --btn-primary-border:       #05B8D1;
+    --btn-primary-color:        #ffffff;
+
+    --btn-light-bg:             #ffffff;
+    --btn-light-border:         #ffffff;
+    --btn-light-color:          #26354B;
+
+    --btn-gray-bg:             #475164;
+    --btn-gray-border:         #475164;
+    --btn-gray-color:          #05B8D1;
+    --btn-gray-border-hover:   #05B8D1;
+
+    --compare-color:            #05B8D1;
+
+    --alternative-bg:           transparent;
+    --alternative-border:       #475164;
+    --alternative-color:        #7B8AA3;
+    --alternative-color-hover:  #05B8D1;
+    --alternative-bg-hover:     #292E38;
+    
+    --leader-color:             #7B8AA3;
+    --leader-val:               #BFC9D9;
+    --leader-dots:              #475164;
+
+    --table-bg:                 #343B49;
+    --table-border:             #475164;
+    --table-color:              #BFC9D9;
+    --table-th-color:           #FFFFFF;
+
+    --select-bg:                #343B49;
+    --select-border:            #7B8AA3;
+    --select-color:             #7B8AA3;
+
+    --input-bg:                 #21252B;
+    --input-border:             #475164;
+    --input-color:              #7B8AA3;
+    --input-error:              #F64D4D;
+
+    --checkbox-bg:              #343B49;
+    --checkbox-bg-active:       #05B8D1;
+    --checkbox-border:          #475164;
+    --checkbox-border-active:   #05B8D1;
+    --checkbox-icon:            #21252B;
+    --checkbox-color:           #7B8AA3;
+
+    --multipleSelect-bg:        #292E38;
+    --multipleSelect-border:    #475164;
+    --multipleSelect-color:     #7B8AA3;
+
+    --primary-outline-bg:       transparent;
+    --primary-outline-border:   #05B8D1;
+    --primary-outline-color:    #05B8D1;
+    --primary-outline-hover:    #ffffff;
+    --primary-outline-hover-bg:    #05B8D1;
+    --primary-outline-hover-color: #ffffff;
+
+    --light-outline-bg:         #343B49;
+    --light-outline-border:     #DDDDE4;
+    --light-outline-color:      #DDDDE4;
+
+    --gray-outline-bg:          #475164;
+    --gray-outline-border:      #475164;
+    --gray-outline-color:       #BFC9D9;
+
+    --pagination-bg:            #343B49;
+    --pagination-border:        #343B49;
+    --pagination-color:         #7B8AA3;
+    --pagination-border-active: #14B8AD;
+    --pagination-description:   #7B8AA3;
+
+    --sidebar-filter-bg:        #343B49;
+    --sidebar-filter-dropdown:  #21252B;
+    --sidebar-filter-border:    #373E48;
+    --sidebar-filter-color:     #7B8AA3;
+    --sidebar-filter-icon:      #BFC9D9;
+
+    --sidebar-tab-bg:           #343B49;
+    --sidebar-tab-color:        #7B8AA3;
+    --sidebar-tab-border:       #475164;
+    --sidebar-tab-bg-active:    #05B8D1;
+    --sidebar-tab-color-active: #ffffff;
+    --sidebar-tab-border-active:#05B8D1;
+
+    --article-nav-border:       #475164;
+    --article-nav-color:        #BFC9D9;
+    --article-nav-icon:         #7B8AA3;
+    --article-nav-active:       #05B8D1;
+    --article-tag-bg:           #FFFFFF;
+    --article-tag-color:        #26354B;
+    --article-content-bg:       #283141;
+    --article-text-color:       #BFC9D9;
+    --article-badge-bg:         #374F5A;
+    --article-badge-color:      #FFFFFF;
+    --article-total-color:      #ffffff;
+
+    --dropdown-color:           #7B8AA3;
+    --dropdown-border:          #7B8AA3;
+    --dropdown-bg:              #343B49;
+    --dropdown-icon:            #BFC9D9;
+
+    --overlay-bg:               #26354B;
+
+    --border-color:             #475164;
+
+    --card-title:               #FFFFFF;
+    --card-description:         #BFC9D9;
+
+    --h3-color:                 #F6F9FD;
+    
+    --vacancy-title-color:      #FFFFFF;
+    --vacancy-description-color:#7B8AA3;
+    --vacancy-active:           #05B8D1;
+    --btn-vacancy-bg:           #05B8D1;
+    --btn-vacancy-color:        #FFFFFF;
+    --btn-vacancy-border:       #05B8D1;
+    --btn-vacancy-active-bg:    #414958;
+    --btn-vacancy-active-border:#05B8D1;
+
+    --progress-danger:          #CA5D5D;
+    --progress-success:         #4BD6A4;
+    --progress-warning:         #F7C206;
+
+    --tooltip-bg:               #21252b;
+    --tooltip-color:            #BFC9D9;
+    --tooltip-border:           #05B8D1;
+    --tip-bg:                   #05B8D1;
+    --tip-color:                #ffffff;
+    --tip-count-bg:             #475164;
+
+    --scrollbar-bg:             #292E38;
+    --scrollbar-track:          #05B8D1;
+    
+
+    --primary:          #05B8D1;
+    --primary-hover:    #1FDFFA;
+    --secondary:        #009DB2;
+    --info:             #475164;
+    --danger:           #F64D4D;
+    --warning:          #F7C206;
+    --black:            #F6F9FD;
+    --white:            #343B49;
+    --gray-700:         #A7AEBE;
+    --gray-600:         #7B8AA3;
+    --gray-500:         #343B49;
+    --gray-400:         #475164;
+    // --gray-300:         #343B49;
+    // --gray-200:         #FAFCFD;
+}  

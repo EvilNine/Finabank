@@ -1,0 +1,170 @@
+.header__links {
+    white-space: nowrap;
+    &-item {
+        margin-left: 28px;
+        position: relative;
+        .header__v2 & {
+            margin-left: 1rem;
+            @media (max-width: 991px) {
+                margin-left: .375rem;
+                margin-right:.375rem;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        @media (max-width: 1199px) {
+            margin-left: 14px;
+            margin-right: 14px;
+        }
+        @media (max-width: 875px) {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        &:hover {
+            color: $active-color;
+        }
+        a, button, label {
+            border: 0;
+            background: transparent;
+            padding: 0;
+            color: $header-color;
+            transition: color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            .header__v2 & {
+                background-color: $header-links-bg;
+                border: 1px solid $header-links-border;
+                border-radius: 8px;
+                padding: .563rem;
+                height: 42px;
+                transition: $transition-base;
+                @media (max-width: 991px) {
+                    height: 28px;
+                    width: 28px;
+                    padding: 0;
+                    justify-content: center;
+                }
+                &:hover {
+                    border-color: $primary;
+                    color: $primary;
+                    svg { 
+                        fill: $primary;
+                    }
+                }
+            }
+            svg {
+                transition: fill .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            }
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $header-color-active;
+                .header__links-icon svg {
+                    fill: $header-color-active;
+                }
+            }
+            
+        }
+        label {
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+            color: $header-color;
+            transition: color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            svg {
+                transition: fill .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            }
+            &:hover {
+                color: $header-color-active;
+                .header__links-icon svg {
+                    fill: $header-color-active;
+                }
+            }
+        }
+        input {
+            position: absolute;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    &-txt {
+        font-weight: $font-weight-semibold;
+        position: relative;
+        font-size: 0.875rem;
+        position: relative;
+        max-width: 114px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .header__v2 & {
+            font-weight: $font-weight-medium;
+        }
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+    &-icon {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .count {
+            background-color: $tip-count-bg;
+            border-radius: 1rem;
+            position: absolute;
+            right: -5px;
+            bottom: -2px;
+            min-width: 1rem;
+            height: 1rem;
+            text-align: center;
+            color: $primary;
+            font-size: .75rem;
+            font-weight: $font-weight-medium;
+        }
+        .header__v2 & {
+            @media (max-width: 991px) {
+                width: 15px;
+                height: 15px;
+                svg {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+        svg {
+            display: block;
+            fill: $header-icon;
+            [data-theme="light"] & {
+                &#icon__dark {
+                    display: none;
+                }
+                &#icon__light {
+                    display: block;
+                    fill: #0C7294;
+                }
+            }
+            [data-theme="dark"] & {
+                &#icon__dark {
+                    display: block;
+                    fill: #F2DF38;
+                }
+                &#icon__light {
+                    display: none;
+                }
+            }
+            
+        }
+        @media (max-width: 767px) {
+            width: 20px;
+            height: 20px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

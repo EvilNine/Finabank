@@ -1,0 +1,17 @@
+.header__top {
+    padding: 1rem 0; 
+    border-bottom: 1px solid $table-border;
+    .header__v2 & {
+        border-bottom: 0;
+        @media (max-width: 767px) {
+            padding: 0.75rem 0;
+        }
+        
+    }
+    @media (max-width: 767px) {
+        background-color: $header-bg;
+        padding: 0.407rem 0;
+        position: relative;
+        z-index: 1;
+    }
+}

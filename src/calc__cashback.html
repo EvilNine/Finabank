@@ -1,0 +1,1074 @@
+---
+layout: default
+title: Finabank
+---
+
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="horizontal__scroll">
+        <ol class="breadcrumb horizontal__scroll-container">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Калькуляторы</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- page header -->
+<div class="page__heading mb-4">
+    <div class="container">
+        <div class="page__heading-top d-flex pr-0 justify-content-between align-items-center">
+            <div>
+                <h1 class="page__heading-title mb-0">Онлайн калькулятор кэшбэка </h1>
+                <h3 class="font-weight-semibold mt-2 mb-0">Кредитный калькулятор онлайн позволит рассчитать переплаты по кредиту относительно выбранных параметров по аннуитетной или дифференцированной схеме. График ежемесячных платежей по кредиту позволить вам оценить свои возможности на погашение, а также определить, подходит ли вам выбранный кредит.</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / page header -->
+
+
+<div class="container">
+    <!-- calc page -->
+    <div class="calc__page">
+        <!-- calc -->
+        <div class="section">
+            <div class="horizontal__scroll py-3">
+                <div class="horizontal__scroll-container">
+                    <a href="calc__credit.html" class="btn calc__page-nav btn-light">Кредитный калькулятор</a>
+                    <a href="calc__cashback.html" class="btn calc__page-nav btn-primary">Калькулятор кэшбэка</a>
+                    <a href="calc__loan.html" class="btn calc__page-nav btn-light">Калькулятор займов</a>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="calc" id="calc" data-type="cashbackCalc">
+                    <div class="calc__header d-flex justify-content-between align-items-center h3 m-0 p-3 px-md-4 py-md-3">
+                        Выберите кэшбэк и укажите ежемесячные расходы
+                        <div class="tooltip">
+                            <div class="tooltip__trigger">
+                                <svg width="6" height="12" viewBox="0 0 6 12"><use xlink:href="img/icons.svg#question" width="6" height="12" x="0" y="0"></use></svg>
+                            </div>
+                            <div class="tooltip__drop">Введите все нужные вам параметры в калькулятори и получите точный ежемесячный платеж с процентной визуализацией выгоды</div>
+                        </div>
+                    </div>
+                    <div class="calc__content p-3 p-md-4">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-3">
+                                <div class="calc__field">
+                                    <div class="calc__field-wrap">
+                                        <div class="calc__field-label">Вид кэшбэка</div>
+                                        <select name="" id="cashbackTypeSelect" class="styledSelect calc__input" placeholder="" data-field="type">
+                                            <option value="20000">На всё</option>
+                                            <option value="5000">АЗС</option>
+                                            <option value="15000">Кафе и Рестораны</option>
+                                            <option value="15000">Красота и здоровье</option>
+                                            <option value="15000">Одежда и обувь</option>
+                                            <option value="50000">Путешествия</option>
+                                            <option value="10000">Развлечения</option>
+                                            <option value="10000">Такси и каршеринг</option>
+                                            <option value="10000">У партнеров</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="calc__field">
+                                    <div class="calc__field-wrap">
+                                        <div class="calc__field-label">Ежемесячные расходы</div>
+                                        <input type="text" class="range__value form-control calc__input " value="10000" min="0" max="200000" data-field="limit">
+                                        <input class="range__input calc__input" name="range1" type="range" min="0" max="200000" value="10000" data-field="limit" style="--range-progress:10%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="calc__field">
+                                    <div class="calc__field-wrap">
+                                        <div class="calc__field-label">Размер кэшбэка %</div>
+                                        <input type="text" class="range__value form-control calc__input " value="1" min="0" max="100" data-field="percent">
+                                        <input class="range__input calc__input" name="range1" type="range" min="0" max="100" value="1" data-field="percent" style="--range-progress:1%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="calc__total">
+                                    <div class="calc__total-field d-flex justify-content-between align-items-center">
+                                        <div class="calc__total-label">Ежемесячные расходы</div>
+                                        <div class="calc__value">
+                                            <span id="calc__sum" class="calc__value-text">10 000</span>
+                                            <span class="calc__value-char">₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="calc__total-field d-flex justify-content-between align-items-center">
+                                        <div class="calc__total-label">Суммарный кэшбэк в рублях</div>
+                                        <div class="calc__total-value">
+                                            <span id="calc__cashbackSum" class="calc__value-text">70 031</span> 
+                                            <span class="calc__value-char">₽</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / calc -->
+
+        <!-- faq -->
+        <div class="section">
+            <div class="section__header d-flex justify-content-between align-items-center">
+                <h2 class="title mb-4">Часто задавемые вопросы</h2>
+            </div>
+            <!-- accordion -->
+            <div class="accordion" id="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-1"
+                            aria-expanded="false">
+                            Что такое льготный период?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-1" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-2"
+                            aria-expanded="false">
+                            Как расчитать платежь по кредитной карте?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-2" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-3"
+                            aria-expanded="false">
+                            Как расчитать платежь по кредитной карте?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-3" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-4"
+                            aria-expanded="false">
+                            Почему отказали в выдачи кредитной карты?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-4" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-5"
+                            aria-expanded="false">
+                            Почему отказали в выдачи кредитной карты?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-5" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-6"
+                            aria-expanded="false">
+                            Сколько стоит кредитная карта?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-6" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-7"
+                            aria-expanded="false">
+                            Какие справки нужны для оформления кредитной карты?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-7" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <button class="accordion__button collapsed" type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapse__item-8"
+                            aria-expanded="false">
+                            Можно ли снимать деньги с кредитной карты?
+                            <div class="accordion__button-icon"><svg width="12" height="6" viewBox="0 0 12 6"><use xlink:href="img/icons.svg#arrow" width="12" height="6" x="0" y="0"></use></svg></div>
+                        </button>
+                    </div>
+                    <div id="collapse__item-8" class="accordion__collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion__body wysiwyg">
+                            <ul>
+                                <li>Закажите карту сегодня и получите бесплатное обслуживание навсегда!</li>
+                                <li>При оформлении кредитной карты сегодня льготный период составит 365 дней на операции покупок, совершенные в течение 30 дней с даты получения карты.</li>
+                            </ul>
+                            <p>Каждый может по-разному относиться к банковскому продукту «365 дней без процентов». Однако данная кредитная карточка — это продукт инновационного банка новейшей разработки, который сочетает в себе множество возможностей: текущий расчетный счет, льготный период до 365 дней, депозитный счет, удобный мобильный и интернет-банкинг. Чтобы сделать правильный выбор по поводу того, оформлять заявку на ее получение или нет, следует изначально ознакомиться с подробной информацией на сайте Бробанк.ру о кредитном продукте «365 дней без %».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / accordion -->
+        </div>
+        <!-- / faq -->
+
+        <!-- best offers -->
+        <div class="section">
+            <div class="section__header d-flex justify-content-between align-items-center">
+                <h2 class="title mb-4">Лучшие предложения</h2>
+            </div>
+            <div class="horizontal__scroll">        
+                <div class="horizontal__scroll-container row">
+                    <!-- item -->
+                    <div class="card card__horizontal bank__item h-100 size4">
+                        <div class="card-container p-2">
+                            <div class="d-flex">
+                                <div class="bank__item-img mr-2">
+                                    <img src="img/alfabank.png" alt="">
+                                </div>
+                                <div class="bank__item-content">
+                                    <a href="" class="card__header-title stretched-link mt-1 mb-2">Кредитная карта ВТБ 24, Без границ</a>
+                                    <div class="card__header-info d-flex align-items-center">
+                                        <div class="card__rating d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#starLine" x="0" y="0"></use></svg></div>
+                                            5.5
+                                        </div>
+                                        <div class="card__icon d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                            68
+                                        </div>
+                                        <div class="card__header-num">
+                                            №1
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank__item-footer text-center pt-3 pb-2 mx-n2 mt-2">
+                                <p>До 100 дней без процентов</p>
+                                <p>От 11,9 %</p>
+                                <p>Лимит - до 1 000 000 ₽</p>
+                                <p>Период - 365 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                    <!-- item -->
+                    <div class="card card__horizontal bank__item h-100 size4">
+                        <div class="card-container p-2">
+                            <div class="d-flex">
+                                <div class="bank__item-img mr-2">
+                                    <img src="img/alfabank.png" alt="">
+                                </div>
+                                <div class="bank__item-content">
+                                    <a href="" class="card__header-title stretched-link mt-1 mb-2">Кредитная карта ВТБ 24, Без границ</a>
+                                    <div class="card__header-info d-flex align-items-center">
+                                        <div class="card__rating d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#starLine" x="0" y="0"></use></svg></div>
+                                            5.5
+                                        </div>
+                                        <div class="card__icon d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                            68
+                                        </div>
+                                        <div class="card__header-num">
+                                            №1
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank__item-footer text-center pt-3 pb-2 mx-n2 mt-2">
+                                <p>До 100 дней без процентов</p>
+                                <p>От 11,9 %</p>
+                                <p>Лимит - до 1 000 000 ₽</p>
+                                <p>Период - 365 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                    <!-- item -->
+                    <div class="card card__horizontal bank__item h-100 size4">
+                        <div class="card-container p-2">
+                            <div class="d-flex">
+                                <div class="bank__item-img mr-2">
+                                    <img src="img/alfabank.png" alt="">
+                                </div>
+                                <div class="bank__item-content">
+                                    <a href="" class="card__header-title stretched-link mt-1 mb-2">Кредитная карта ВТБ 24, Без границ</a>
+                                    <div class="card__header-info d-flex align-items-center">
+                                        <div class="card__rating d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#starLine" x="0" y="0"></use></svg></div>
+                                            5.5
+                                        </div>
+                                        <div class="card__icon d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                            68
+                                        </div>
+                                        <div class="card__header-num">
+                                            №1
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank__item-footer text-center pt-3 pb-2 mx-n2 mt-2">
+                                <p>До 100 дней без процентов</p>
+                                <p>От 11,9 %</p>
+                                <p>Лимит - до 1 000 000 ₽</p>
+                                <p>Период - 365 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                    <!-- item -->
+                    <div class="card card__horizontal bank__item h-100 size4">
+                        <div class="card-container p-2">
+                            <div class="d-flex">
+                                <div class="bank__item-img mr-2">
+                                    <img src="img/alfabank.png" alt="">
+                                </div>
+                                <div class="bank__item-content">
+                                    <a href="" class="card__header-title stretched-link mt-1 mb-2">Кредитная карта ВТБ 24, Без границ</a>
+                                    <div class="card__header-info d-flex align-items-center">
+                                        <div class="card__rating d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#starLine" x="0" y="0"></use></svg></div>
+                                            5.5
+                                        </div>
+                                        <div class="card__icon d-flex align-items-center mr-3">
+                                            <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                            68
+                                        </div>
+                                        <div class="card__header-num">
+                                            №1
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank__item-footer text-center pt-3 pb-2 mx-n2 mt-2">
+                                <p>До 100 дней без процентов</p>
+                                <p>От 11,9 %</p>
+                                <p>Лимит - до 1 000 000 ₽</p>
+                                <p>Период - 365 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                </div>
+            </div>
+        </div>
+        <!-- / best offers -->
+
+        <!-- articles -->
+        <div class="section">
+            <div class="section__header mb-4 d-flex justify-content-between align-items-center">
+                <h2 class="title mb-0">Статьи из блога</h2>
+                <a href="" class="btn btn-primary btn-sm btn-all">
+                    Все
+                    <span class="icon ml-2">
+                        <svg width="21" height="12" viewBox="0 0 21 12" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.242 5.266A.738.738 0 0 0 .5 6c0 .406.332.734.742.734H11.38v2.07c0 2.233 2.59 3.495 4.379 2.132l3.68-2.803a2.674 2.674 0 0 0 0-4.266l-3.68-2.803c-1.789-1.363-4.38-.1-4.38 2.132v2.07H1.243Zm13.612 4.507c-.813.62-1.99.046-1.99-.97V3.197c0-1.015 1.177-1.588 1.99-.969l3.68 2.804c.643.49.643 1.449 0 1.939l-3.68 2.803Z"></path></svg>
+                    </span>
+                </a>
+            </div>
+            <div class="horizontal__scroll row">        
+                <div class="horizontal__scroll-container">
+                    <!-- item -->
+                    <div class="article__item card card__vertical size4 offer h-100">
+                        <div class="card-container p-3 d-xl-flex flex-xl-column">
+                            <div class="card__image">
+                                <img src="img/article.png" alt="">
+                            </div>
+                            <div class="card__date my-2">10.01.22</div>
+                            <a href="" class="article__title h4 stretched-link">Как банки завышают полную стоимость кредита стоимость кредита</a>
+                            <div class="mt-auto">
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.5 17.2" xml:space="preserve"><use xlink:href="img/icons.svg#eye" x="0" y="0"></use></svg></div>
+                                        500
+                                    </div>
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                    <div class="card__like d-flex align-items-center ml-auto">
+                                        <div class="mr-2"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 17.6" xml:space="preserve"><use xlink:href="img/icons.svg#heartLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                </div>
+                                <div class="card__author d-flex align-items-center mt-3">
+                                    <div class="card__author-img"><img src="img/author.png" alt=""></div>
+                                    <div class="card__author-content">
+                                        <a href="" class="card__author-title">Константин Константинопольский</a>
+                                        <div class="rating d-flex align-items-center">
+                                            <div class="rating__stars" style="--rating: 4;"></div>
+                                            <div class="rating__score">4.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                    <!-- item -->
+                    <div class="article__item card card__vertical size4 offer h-100">
+                        <div class="card-container p-3 d-xl-flex flex-xl-column">
+                            <div class="card__image">
+                                <img src="img/article.png" alt="">
+                            </div>
+                            <div class="card__date my-2">10.01.22</div>
+                            <a href="" class="article__title h4 stretched-link">Как банки завышают полную стоимость кредита стоимость кредита</a>
+                            <div class="mt-auto">
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.5 17.2" xml:space="preserve"><use xlink:href="img/icons.svg#eye" x="0" y="0"></use></svg></div>
+                                        500
+                                    </div>
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                    <div class="card__like d-flex align-items-center ml-auto">
+                                        <div class="mr-2"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 17.6" xml:space="preserve"><use xlink:href="img/icons.svg#heartLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                </div>
+                                <div class="card__author d-flex align-items-center mt-3">
+                                    <div class="card__author-img"><img src="img/author.png" alt=""></div>
+                                    <div class="card__author-content">
+                                        <a href="" class="card__author-title">Константин Константинопольский</a>
+                                        <div class="rating d-flex align-items-center">
+                                            <div class="rating__stars" style="--rating: 4;"></div>
+                                            <div class="rating__score">4.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                    <!-- item -->
+                    <div class="article__item card card__vertical size4 offer h-100">
+                        <div class="card-container p-3 d-xl-flex flex-xl-column">
+                            <div class="card__image">
+                                <img src="img/article.png" alt="">
+                            </div>
+                            <div class="card__date my-2">10.01.22</div>
+                            <a href="" class="article__title h4 stretched-link">Как банки завышают полную стоимость кредита стоимость кредита</a>
+                            <div class="mt-auto">
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.5 17.2" xml:space="preserve"><use xlink:href="img/icons.svg#eye" x="0" y="0"></use></svg></div>
+                                        500
+                                    </div>
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                    <div class="card__like d-flex align-items-center ml-auto">
+                                        <div class="mr-2"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 17.6" xml:space="preserve"><use xlink:href="img/icons.svg#heartLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                </div>
+                                <div class="card__author d-flex align-items-center mt-3">
+                                    <div class="card__author-img"><img src="img/author.png" alt=""></div>
+                                    <div class="card__author-content">
+                                        <a href="" class="card__author-title">Константин Константинопольский</a>
+                                        <div class="rating d-flex align-items-center">
+                                            <div class="rating__stars" style="--rating: 4;"></div>
+                                            <div class="rating__score">4.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                    <!-- item -->
+                    <div class="article__item card card__vertical size4 offer h-100">
+                        <div class="card-container p-3 d-xl-flex flex-xl-column">
+                            <div class="card__image">
+                                <img src="img/article.png" alt="">
+                            </div>
+                            <div class="card__date my-2">10.01.22</div>
+                            <a href="" class="article__title h4 stretched-link">Как банки завышают полную стоимость кредита стоимость кредита</a>
+                            <div class="mt-auto">
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.5 17.2" xml:space="preserve"><use xlink:href="img/icons.svg#eye" x="0" y="0"></use></svg></div>
+                                        500
+                                    </div>
+                                    <div class="card__icon d-flex align-items-center mr-3">
+                                        <div class="mr-2"><svg width="18" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" xml:space="preserve"><use xlink:href="img/icons.svg#commentLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                    <div class="card__like d-flex align-items-center ml-auto">
+                                        <div class="mr-2"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 17.6" xml:space="preserve"><use xlink:href="img/icons.svg#heartLine" x="0" y="0"></use></svg></div>
+                                        658
+                                    </div>
+                                </div>
+                                <div class="card__author d-flex align-items-center mt-3">
+                                    <div class="card__author-img"><img src="img/author.png" alt=""></div>
+                                    <div class="card__author-content">
+                                        <a href="" class="card__author-title">Константин Константинопольский</a>
+                                        <div class="rating d-flex align-items-center">
+                                            <div class="rating__stars" style="--rating: 4;"></div>
+                                            <div class="rating__score">4.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / item -->
+                </div>
+            </div>
+        </div>
+        <!-- / articles -->
+
+        <!-- comments & form -->
+        <div class="section">
+            <!-- comments -->
+            <div class="section__header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="title mb-0">Отзывы 15</h2>
+                <button class="btn btn-primary btn-scroll btn-sm" data-target="commentForm">
+                    Оставить отзыв
+                </button>
+            </div>
+
+            <div class="comments">
+                <!-- item -->
+                <div class="comments__item mb-3">
+                    <!-- comment -->
+                    <div class="comment__one">
+                        <div class="comment__one-header d-flex align-items-center">
+                            <div class="comment__one-img mr-3">
+                                <img src="img/expert2.png" alt="">
+                            </div>
+                            <div class="d-md-flex justify-content-md-between w-100">
+                                <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                        <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                        Гость
+                                    </div>
+                                    <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                        <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                        AlfaBank
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__one-content">
+                            Заказала сегодня карту, получила одобрение, была назначена дата встречи, в личном кабинете появилась карта со статусом «Ожидание встречи». Через 30 мин пришло смс, что заявка отклонена. Разговор с оператором ничего не дал. Бредовая ситуация, особенно с учётом того, что я уже давно являюсь клиентом этого банка.
+                        </div>
+                        <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                            <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                            <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                            <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                <a href="" class="like__up">
+                                    <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                    18
+                                </a>
+                                <a href="" class="like__down">
+                                    <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                    9
+                                </a>
+                            </div>
+
+                            <div class="comment__one-btn order-md-2 mr-md-4">
+                                <button class="btn btn-outline-light btn-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answ__1" aria-expanded="false">
+                                    1 Ответ
+                                    <svg width="12" height="6" viewBox="0 0 12 6">
+                                        <use xlink:href="img/icons.svg#arrow" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- comment -->
+                    <div class="collapse comment__one-collapse" id="answ__1">
+                        <div class="comment__one-hidden">
+                            <!-- comment -->
+                            <div class="comment__one">
+                                <div class="comment__one-header d-flex align-items-center">
+                                    <div class="comment__one-img mr-3">
+                                        <img src="img/expert2.png" alt="">
+                                    </div>
+                                    <div class="d-md-flex justify-content-md-between w-100">
+                                        <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                                Гость
+                                            </div>
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                                AlfaBank
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment__one-content">
+                                    Получил карту и уже пользуюсь ,всё шикарно мне очень нравится всем советую !
+                                </div>
+                                <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                                    <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                                    <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                                    <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                        <a href="" class="like__up">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                            18
+                                        </a>
+                                        <a href="" class="like__down">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                            9
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comment -->
+
+                            <!-- comment -->
+                            <div class="comment__one">
+                                <div class="comment__one-header d-flex align-items-center">
+                                    <div class="comment__one-img mr-3">
+                                        <img src="img/expert2.png" alt="">
+                                    </div>
+                                    <div class="d-md-flex justify-content-md-between w-100">
+                                        <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                                Гость
+                                            </div>
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                                AlfaBank
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment__one-content">
+                                    <a href="">@Константин Поповский</a>  Получил карту и уже пользуюсь ,всё шикарно мне очень нравится всем советую !
+                                </div>
+                                <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                                    <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                                    <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                                    <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                        <a href="" class="like__up">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                            18
+                                        </a>
+                                        <a href="" class="like__down">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                            9
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comment -->
+                        </div>
+                    </div>
+                </div>
+                <!-- / item -->
+
+                <!-- item -->
+                <div class="comments__item mb-3">
+                    <!-- comment -->
+                    <div class="comment__one">
+                        <div class="comment__one-header d-flex align-items-center">
+                            <div class="comment__one-img mr-3">
+                                <img src="img/expert2.png" alt="">
+                            </div>
+                            <div class="d-md-flex justify-content-md-between w-100">
+                                <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                        <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                        Гость
+                                    </div>
+                                    <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                        <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                        AlfaBank
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__one-content">
+                            Заказала сегодня карту, получила одобрение, была назначена дата встречи, в личном кабинете появилась карта со статусом «Ожидание встречи». Через 30 мин пришло смс, что заявка отклонена. Разговор с оператором ничего не дал. Бредовая ситуация, особенно с учётом того, что я уже давно являюсь клиентом этого банка.
+                        </div>
+                        <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                            <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                            <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                            <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                <a href="" class="like__up">
+                                    <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                    18
+                                </a>
+                                <a href="" class="like__down">
+                                    <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                    9
+                                </a>
+                            </div>
+
+                            <div class="comment__one-btn order-md-2 mr-md-4">
+                                <button class="btn btn-outline-light btn-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answ__2" aria-expanded="false">
+                                    1 Ответ
+                                    <svg width="12" height="6" viewBox="0 0 12 6">
+                                        <use xlink:href="img/icons.svg#arrow" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- comment -->
+                    <div class="collapse comment__one-collapse" id="answ__2">
+                        <div class="comment__one-hidden">
+                            <!-- comment -->
+                            <div class="comment__one">
+                                <div class="comment__one-header d-flex align-items-center">
+                                    <div class="comment__one-img mr-3">
+                                        <img src="img/expert2.png" alt="">
+                                    </div>
+                                    <div class="d-md-flex justify-content-md-between w-100">
+                                        <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                                Гость
+                                            </div>
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                                AlfaBank
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment__one-content">
+                                    Получил карту и уже пользуюсь ,всё шикарно мне очень нравится всем советую !
+                                </div>
+                                <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                                    <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                                    <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                                    <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                        <a href="" class="like__up">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                            18
+                                        </a>
+                                        <a href="" class="like__down">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                            9
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comment -->
+
+                            <!-- comment -->
+                            <div class="comment__one">
+                                <div class="comment__one-header d-flex align-items-center">
+                                    <div class="comment__one-img mr-3">
+                                        <img src="img/expert2.png" alt="">
+                                    </div>
+                                    <div class="d-md-flex justify-content-md-between w-100">
+                                        <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                                Гость
+                                            </div>
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                                AlfaBank
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment__one-content">
+                                    <a href="">@Константин Поповский</a>  Получил карту и уже пользуюсь ,всё шикарно мне очень нравится всем советую !
+                                </div>
+                                <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                                    <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                                    <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                                    <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                        <a href="" class="like__up">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                            18
+                                        </a>
+                                        <a href="" class="like__down">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                            9
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comment -->
+                        </div>
+                    </div>
+                </div>
+                <!-- / item -->
+
+                <!-- item -->
+                <div class="comments__item comments__hidden mb-3">
+                    <!-- comment -->
+                    <div class="comment__one">
+                        <div class="comment__one-header d-flex align-items-center">
+                            <div class="comment__one-img mr-3">
+                                <img src="img/expert2.png" alt="">
+                            </div>
+                            <div class="d-md-flex justify-content-md-between w-100">
+                                <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                        <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                        Гость
+                                    </div>
+                                    <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                        <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                        AlfaBank
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment__one-content">
+                            Заказала сегодня карту, получила одобрение, была назначена дата встречи, в личном кабинете появилась карта со статусом «Ожидание встречи». Через 30 мин пришло смс, что заявка отклонена. Разговор с оператором ничего не дал. Бредовая ситуация, особенно с учётом того, что я уже давно являюсь клиентом этого банка.
+                        </div>
+                        <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                            <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                            <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                            <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                <a href="" class="like__up">
+                                    <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                    18
+                                </a>
+                                <a href="" class="like__down">
+                                    <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                    9
+                                </a>
+                            </div>
+
+                            <div class="comment__one-btn order-md-2 mr-md-4">
+                                <button class="btn btn-outline-light btn-xs collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answ__3" aria-expanded="false">
+                                    1 Ответ
+                                    <svg width="12" height="6" viewBox="0 0 12 6">
+                                        <use xlink:href="img/icons.svg#arrow" x="0" y="0"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- comment -->
+                    <div class="collapse comment__one-collapse" id="answ__3">
+                        <div class="comment__one-hidden">
+                            <!-- comment -->
+                            <div class="comment__one">
+                                <div class="comment__one-header d-flex align-items-center">
+                                    <div class="comment__one-img mr-3">
+                                        <img src="img/expert2.png" alt="">
+                                    </div>
+                                    <div class="d-md-flex justify-content-md-between w-100">
+                                        <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                                Гость
+                                            </div>
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                                AlfaBank
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment__one-content">
+                                    Получил карту и уже пользуюсь ,всё шикарно мне очень нравится всем советую !
+                                </div>
+                                <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                                    <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                                    <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                                    <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                        <a href="" class="like__up">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                            18
+                                        </a>
+                                        <a href="" class="like__down">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                            9
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comment -->
+
+                            <!-- comment -->
+                            <div class="comment__one">
+                                <div class="comment__one-header d-flex align-items-center">
+                                    <div class="comment__one-img mr-3">
+                                        <img src="img/expert2.png" alt="">
+                                    </div>
+                                    <div class="d-md-flex justify-content-md-between w-100">
+                                        <div class="comment__one-title mb-2 mb-md-0">Константин Поповский</div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="14" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#person" x="0" y="0"></use></svg></div>
+                                                Гость
+                                            </div>
+                                            <div class="card__icon d-flex align-items-center ml-3 ml-sm-4">
+                                                <div class="mr-2"><svg width="18" height="19" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#house" x="0" y="0"></use></svg></div>
+                                                AlfaBank
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment__one-content">
+                                    <a href="">@Константин Поповский</a>  Получил карту и уже пользуюсь ,всё шикарно мне очень нравится всем советую !
+                                </div>
+                                <div class="comment__one-footer d-flex flex-wrap align-items-center">
+                                    <a href="" class="comment__one-answer order-md-3 mr-4 mr-md-0">Ответить</a>
+
+                                    <div class="comment__one-date mr-md-4 order-md-1">25.04.21 в 21:15</div>
+
+                                    <div class="comment__one-like order-md-4 ml-auto d-flex justify-content-between">
+                                        <a href="" class="like__up">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeUp" x="0" y="0"></use></svg>
+                                            18
+                                        </a>
+                                        <a href="" class="like__down">
+                                            <svg width="18" height="18" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><use xlink:href="img/icons.svg#likeDown" x="0" y="0"></use></svg>
+                                            9
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comment -->
+                        </div>
+                    </div>
+                </div>
+                <!-- / item -->
+
+                <a href="" class="btn__show-all" id="show__comments">
+                    <div class="icon"><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 19.5" xml:space="preserve"><path d="M578.1 252.7h4.3c1.3 0 2.2 1.4 1.6 2.6l-3.2 6.2c-.3.6-.9 1-1.6 1h-3.6c-.1 0-.3 0-.4-.1l-3.4-.8m6.3-8.9v-4.4c0-1-.8-1.8-1.8-1.8h-.1c-.4 0-.8.4-.8.8 0 .6-.2 1.3-.5 1.8l-3.1 4.5v8m6.3-8.9h-1.8m-4.5 8.9H570c-1 0-1.8-.8-1.8-1.8v-5.3c0-1 .8-1.8 1.8-1.8h2.3M9.8 0C4.4 0 0 4.4 0 9.7c0 5.4 4.4 9.8 9.8 9.8s9.8-4.4 9.8-9.8C19.5 4.4 15.1 0 9.8 0zm0 18c-4.6 0-8.2-3.7-8.2-8.2 0-4.6 3.7-8.2 8.2-8.2S18 5.2 18 9.7c0 4.6-3.7 8.3-8.2 8.3z"/><path d="M13.5 9.7c0 .4-.3.8-.8.8h-2.2v2.2c0 .4-.3.8-.8.8s-.7-.3-.7-.8v-2.2H6.8c-.5 0-.8-.3-.8-.8 0-.4.3-.7.8-.7H9V6.7c0-.4.3-.7.8-.7s.8.3.8.8V9h2.2c.4 0 .7.3.7.7z"/></svg></div>
+                    Показать еще
+                </a>
+            </div>
+            <!-- / comments -->
+
+            <!-- form -->
+            <div class="form pt-5" id="commentForm">
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Имя">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="E-Mail">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" placeholder="Комментарий" rows="4"></textarea>
+                            <div class="mt-3">
+                                <button class="btn btn-primary px-5" type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- / from -->
+        </div>
+        <!-- / comments & form -->
+
+    </div> 
+    <!-- / calc page -->
+</div>
+

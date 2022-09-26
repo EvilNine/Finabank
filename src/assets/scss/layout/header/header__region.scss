@@ -1,0 +1,44 @@
+.header__region {
+    border-bottom: 1px solid $table-border;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    max-height: 100%;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    .tag__item {
+        margin-bottom: 0.875rem;
+    }
+    &-wrapper {
+        background-color: $header-bg;
+        position: relative;
+        padding: 1.5rem 0;
+        overflow: auto;
+        max-height: 100%;
+        z-index: 4;
+        transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        @media (max-width: 767px) {
+            background-color: $body-bg;
+            border-bottom: 1px solid $table-border;
+        }
+    }
+    &.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    &-list {
+        border-top: 1px solid $border-color;
+    }
+    &-link {
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

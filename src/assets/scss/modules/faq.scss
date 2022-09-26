@@ -1,0 +1,12 @@
+.faq__list {
+    &-item {
+        border-bottom: 1px solid $gray-500;
+        padding: 1.25rem 0;
+        &:first-child {
+            padding-top: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}

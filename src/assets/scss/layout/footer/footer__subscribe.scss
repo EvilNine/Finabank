@@ -1,0 +1,51 @@
+.footer__subscribe {
+    margin-top: 80px;
+    margin-bottom: 44px;
+    @media (max-width: 575px) {
+        background-color: $white;
+        border-bottom: 1px solid $border-color;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-left: -.875rem;
+        margin-right: -.875rem;
+        padding: 20px .875rem;
+    }
+    &-form {
+        width: 100%;
+        p {
+            color: $text-color2;
+            margin-bottom: 34px;
+            line-height: 24px;
+            font-size: 20px;
+            @media (max-width: 575px) {
+                font-size: .75rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+        }
+        @media (max-width: 575px) {
+            .btn {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    &-title {
+        color: $text-color1;
+        font-size: 38px;
+        font-weight: $font-weight-bold;
+        line-height: 1;
+        margin-bottom: 1rem;
+        @media (max-width: 575px) {
+            font-size: .875rem;
+        }
+    }
+    &-icon {
+        margin-left: 97px;
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: $active-color;
+        }
+    }
+}

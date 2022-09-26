@@ -1,0 +1,64 @@
+.filter {
+    background: $bg;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px $tag-shadow;
+    &__section {
+        border-bottom: 1px solid $form-border;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    &__content {
+        
+        
+    }
+    &__btn {
+        background: $sidebar-filter-bg;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .875rem;
+        font-weight: $font-weight-semibold;
+        color: $sidebar-filter-color;
+        padding: $input-padding-y $input-padding-x;
+        transition: $transition-base;
+        &.collapsed {
+            .filter__btn-icon {
+                transform: rotate(0deg);
+            }
+        }
+        &:hover {
+            text-decoration: none;
+            color: $secondary;
+            svg {
+                fill: $secondary;
+            }
+        }
+        &-icon {
+            width: 12px;
+            height: 6px;
+            flex: 0 0 12px;
+            transition: $transition-base;
+            transform: rotate(-180deg);
+            svg {
+                display: block;
+                fill: $sidebar-filter-icon;
+            }
+        }
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &-item {
+            background: $sidebar-filter-dropdown;
+            border-top: 1px solid $sidebar-filter-border;
+            transition: $transition-base;
+            &:hover {
+                background-color: $gray-400;
+            }
+        }
+    }
+}

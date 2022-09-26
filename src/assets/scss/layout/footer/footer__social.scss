@@ -1,0 +1,19 @@
+.footer__social {
+    width: 124px;
+    @media (max-width: 575px) {
+        width: 104px;
+    }
+    &-link {
+        margin: 0 15px;
+        svg {
+            display: block;
+            fill: $footer-social-color;
+            transition: $transition-fill;
+        }
+        &:hover {
+            svg {
+                fill: $primary;
+            }
+        }
+    }
+}

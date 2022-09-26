@@ -1,0 +1,16 @@
+.sidebar__field {
+    &-title {
+        color: $gray-600;
+        font-weight: $font-weight-bold;
+        font-size: .75rem;
+    }
+    &-content {
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-num {
+        font-size: .938rem;
+    }
+}

@@ -1,0 +1,44 @@
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5{
+	margin-bottom: $headings-margin-bottom;
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	line-height: $headings-line-height;
+	color: $headings-color;
+}
+
+h1, .h1 { 
+	@include font-size($h1-font-size);
+}
+h2, .h2 { 
+	@include font-size($h2-font-size);
+}
+h3, .h3 { 
+	@include font-size($h3-font-size);
+	color: $h3-color;
+}
+h4, .h4 { 
+	@include font-size($h4-font-size);
+}
+h5, .h5 { 
+	@include font-size($h5-font-size);
+}
+
+p {
+	color: $text-color2;
+	line-height: 1.375;
+}
+
+li, ol, ul {
+	color: $text-color2;
+}
+ul {
+	margin: 0 0 20px 27px;
+	padding: 0;
+	list-style-position: outside;
+}
+ol {
+	margin: 0 0 20px 27px;
+	padding: 0;
+	list-style-position: outside;
+}

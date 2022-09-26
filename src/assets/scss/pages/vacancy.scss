@@ -1,0 +1,90 @@
+.vacancy {
+    &__item {
+        position: relative;
+        overflow: hidden;
+        background: $bg;
+        @media (min-width: 768px) {
+            border-radius: 20px;
+            box-shadow: 0px 2px 4px $tag-shadow;
+        }
+        @media (max-width: 767px) {
+            border-top: 1px solid $border-color;
+            margin: 0 -14px;
+            &:first-child {
+                border-top: 0;
+            }
+        }
+        &-header {
+            padding: 1rem 3rem 1rem 1rem;
+            @media (max-width: 767px) {
+                padding: 1rem;
+            }
+        }
+        &-title {
+            .title {
+                color: $vacancy-title-color;
+                @media (max-width: 767px) {
+                    font-size: .875rem;
+                }
+            }
+            .description {
+                
+                &__item {
+                    font-size: 1.125rem;
+                    color: $vacancy-description-color;
+                    margin-right: 1.25rem;
+                    @media (max-width: 767px) {
+                        font-size: .75rem;
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
+        &-img {
+            border: 1px solid $border-color;
+            width: 131px;
+            height: 98px;
+            flex: 0 0 131px;
+            border-radius: 1rem;
+            position: relative;
+            overflow: hidden;
+            @media (max-width: 767px) {
+                width: 79px;
+                height: 60px;
+                flex: 0 0 79px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .btn-vacancy-collapse {
+            @media (max-width: 767px) {
+                width: 100%;
+                display: block;
+                margin-top: 1.25rem;
+            }
+        }
+        &-details {
+            border-top: 1px solid $table-border;
+            // h2, h3, h4, h5 {
+            //     color: $vacancy-title-color;
+            // }
+            // li, p, ol, ul {
+            //     color: $vacancy-description-color;
+            // }
+            // ul {
+            //     margin: 0 0 20px 27px;
+            //     padding: 0;
+            //     list-style-position: outside;
+            // }
+            // ol {
+            //     margin: 0 0 20px 27px;
+            //     padding: 0;
+            //     list-style-position: outside;
+            // }
+            
+        }
+    }
+}

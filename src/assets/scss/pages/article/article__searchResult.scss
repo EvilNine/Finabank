@@ -1,0 +1,64 @@
+.article__searchResult {
+    font-family: $font-family-alternative;
+    &-header {
+        background-color: $bg;
+        padding: 1.25rem 0;
+        @media (max-width: 575px) {
+            padding: .625rem 0;
+        }
+    }
+    &-title {
+        font-size: 1.75rem;
+        font-weight: $font-weight-semibold;
+        margin: 0 0 .625rem;
+        @media (max-width: 575px) {
+            font-size: 1.125rem;
+        }
+        span {
+            color: $primary;
+        }
+    }
+    &-total {
+        color: $article-total-color;
+        font-weight: $font-weight-medium;
+        margin: 0;
+        @media (max-width: 575px) {
+            font-size: .75rem;
+        }
+    }
+    &-item {
+        border-top: 1px solid $article-nav-border;
+        background-color: $bg;
+        padding: 1.25rem 0;
+        @media (max-width: 575px) {
+            padding: .625rem 0;
+        }
+    }
+    &-link {
+        font-weight: $font-weight-bold;
+        @media (max-width: 575px) {
+            font-size: .875rem;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        span {
+            color: $primary;
+        }
+    }
+    &-description {
+        margin: .625rem 0 0;
+        font-weight: $font-weight-medium;
+        @media (max-width: 575px) {
+            font-size: .75rem;
+        }
+    }
+    &-pag {
+        border-top: 1px solid $article-nav-border;
+        background-color: $bg;
+        padding: 1.25rem 0;
+        @media (max-width: 575px) {
+            padding: .625rem 0;
+        }
+    }
+}

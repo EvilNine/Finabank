@@ -1,0 +1,37 @@
+.footer__form {
+    @media (max-width: 767px) {
+        border-top: 1px solid $footer-border;
+        margin-left: -.875rem;
+        margin-right: -.875rem;
+        margin-bottom: -.5rem;
+        padding-left: .875rem;
+        padding-right: .875rem;
+        padding-top: 1rem;
+    }
+    &-title {
+        font-size: 1.125rem;
+        font-weight: $font-weight-medium;
+        margin-bottom: .875rem;
+    }
+    &-wrap {
+        position: relative;
+    }
+    &-input.form-control {
+        border-color: $primary;
+    }
+    &-btn {
+        background: none;
+        border: 0;
+        padding: 15px 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        svg {
+            display: flex;
+            fill: $primary;
+        }
+    }
+    &-description {
+        font-size: .75rem;
+    }
+}

@@ -1,0 +1,21 @@
+.header__currency {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+        background-color: $body-bg;
+        padding: .875rem 1rem;
+        .is-show & {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    &-item {
+        margin-right: 1rem;
+        white-space: nowrap;
+        font-size: .75rem;
+        text-transform: uppercase;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

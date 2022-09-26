@@ -1,0 +1,71 @@
+.logo {
+    font-weight: $font-weight-bold;
+    font-size: 28px;
+    color: $primary;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $primary;
+    }
+    &:focus-visible, &:focus {
+        outline: none;
+    }
+    &__icon {
+        width: 42px;
+        flex: 0 0 42px;
+        height: 46px;
+        margin-right: 5px;
+        .header__v2 & {
+            height: 23px;
+            width: 29px;
+            flex: 0 0 29px;
+            margin-right: 11px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        @media (max-width: 767px) {
+            width: 22px;
+            flex: 0 0 22px;
+            height: 24px;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            fill: $warning;
+        }
+    }
+    &__title {
+        svg {
+            display: block;
+            fill: $logo-title;
+        }
+    }
+}
+
+#btn__submenu-back {
+    background-color: $header-bg;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition-base;
+    display: flex;
+    align-items: center;
+    
+    font-size: .875rem;
+    z-index: -1;
+    .sub-open & {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+    svg {
+        margin-right: 10px;
+        fill: $black;
+    }
+}

@@ -1,0 +1,30 @@
+.header__bottom {
+    border-bottom: 1px solid $table-border;
+    position: relative;
+    @media (max-width: 767px) {
+        background-color: $body-bg;
+        position: fixed;
+        // left: 0;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // padding-top: 47px;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: $transition-base;
+        .is-show & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &-wrap {
+        @media (max-width: 767px) {
+            //background-color: $header-bg;
+            position: relative;
+            height: 100%;
+        }
+    }
+}

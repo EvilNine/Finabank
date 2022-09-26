@@ -1,0 +1,13 @@
+.article__list {
+    &-item {
+        position: relative;
+    }
+    &-img {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+}

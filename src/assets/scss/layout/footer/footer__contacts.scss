@@ -1,0 +1,9 @@
+.footer__contacts {
+    padding-top: 10px;
+    color: $text-color2;
+    @media (max-width: 767px) {
+        background-color: $white;
+        margin: 0 -.875rem;
+        padding: 1rem .875rem 0.5rem;
+    }
+}

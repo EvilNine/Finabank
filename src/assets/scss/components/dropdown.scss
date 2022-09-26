@@ -1,0 +1,101 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    white-space: nowrap;
+}
+
+// The dropdown menu
+.dropdown-menu {
+    background-color: $bg;
+    border: $input-border-width solid $select-border;
+    border-top: 0;
+    background-clip: padding-box;
+    border-radius: 0 0 $input-border-radius $input-border-radius;
+    position: absolute;
+    z-index: $zindex-dropdown;
+    display: none;
+    width: 100%;
+    padding: $dropdown-padding-y $dropdown-padding-x;
+    margin: 0;
+    @include font-size($dropdown-font-size);
+    color: $dropdown-color;
+    text-align: left;
+    list-style: none;
+    overflow: hidden;
+    
+
+    &[data-bs-popper] {
+        top: 100%;
+        left: 0;
+        //margin-top: $dropdown-spacer;
+    }
+}
+
+.dropdown-btn {
+    display: block;
+    width: 100%;
+    height: $input-height;
+    padding: $input-padding-y $input-padding-x;
+    
+    @include font-size($input-font-size);
+    font-weight:        $font-weight-semibold;
+    line-height:        $input-line-height;
+    color:              $dropdown-color;
+    background-color:   $dropdown-bg;
+    background-clip: padding-box;
+    border: $input-border-width solid $dropdown-border;
+
+    @include border-radius($input-border-radius, 0);
+    @include transition($input-transition);
+    &:focus, &:focus-visible {
+        //color: $text-color1;
+        //border-color: $active-color;
+        outline: 0;
+    }
+    &.show {
+        border-radius: $input-border-radius $input-border-radius 0 0;
+        .dropdown-icon {
+            transform: rotate(180deg);
+        }
+    }
+    .dropdown-icon {
+        margin-right: 9px;
+        transition: $transition-base;
+        svg {
+            fill: $dropdown-icon;
+        }
+    }
+}
+
+.dropdown-divider {
+    height: 0;
+    margin: $dropdown-divider-margin-y 0;
+    overflow: hidden;
+    border-top: 1px solid $dropdown-divider-bg;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: $input-padding-y $input-padding-x;
+    clear: both;
+    font-weight: $font-weight-normal;
+    color: $dropdown-color;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    &:hover {
+        background-color: $body-bg;
+        text-decoration: none;
+    }
+}
+
+.dropdown-menu.show {
+    display: block;
+    
+}
+

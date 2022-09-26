@@ -1,0 +1,126 @@
+.header__search {
+    @media (min-width: 768px) {
+        border-bottom: 1px solid $table-border;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        .header__v2 & {
+            top: 68px;
+        }
+    }
+    .header__v2 & {
+        .btn {
+            border-radius: 10px;
+            font-weight: $font-weight-medium;
+        }
+        @media (max-width: 767px) {
+            border-bottom: 1px solid $table-border;
+            position: fixed;
+            left: 0;
+            top: 59px;
+            right: 0;
+            z-index: 4;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+    &.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    &-section {
+        background-color: $header-bg;
+        position: relative;
+        padding: .75rem 0;
+        z-index: 4;
+        transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        .header__v2 & {
+            padding: 1.5rem 0;
+        }
+        @media (max-width: 767px) {
+            background-color: $body-bg;
+            border-bottom: 1px solid $table-border;
+            padding: 0;
+            .header__v2 & {
+                padding: 1rem 0;
+            }
+        }
+    }
+    &-icon {
+        width: 20px;
+        height: 20px;
+        flex: 0 0 20px;
+        margin-top: -5px;
+        svg {
+            fill: $header-icon;
+        }
+    }
+    &-input {
+        background: none;
+        border: 0;
+        box-shadow: none;
+        color: $input-color;
+        margin-left: 1.313rem;
+        font-weight: $font-weight-semibold;
+        font-size: .875rem;
+        padding-left: 0;
+        &:focus, &:focus-visible {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    &-close {
+        cursor: pointer;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        flex: 0 0 24px;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        &::before, &::after {
+            background: $black;
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 2px;
+            transform: translate(-50%,-50%) rotate(45deg);
+        }
+        &::before {
+            width: 19px;
+            height: 2px;
+        }
+        &::after {
+            width: 2px;
+            height: 19px;
+        }
+    }
+    &-result {
+        border-top: 1px solid $table-border;
+        padding: .75rem 0;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    &-link {
+        color: $primary;
+        font-weight: $font-weight-medium;
+        display: block;
+        margin-left: 2.5rem;
+    }
+    &-description {
+        color: $header-color;
+        font-size: .75rem;
+        margin-left: 2.5rem;
+    }
+}

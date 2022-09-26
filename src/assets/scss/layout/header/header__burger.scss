@@ -1,0 +1,37 @@
+.header__burger {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: $burger-width;
+    height: $burger-height;
+    flex: 0 0 $burger-width;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    &:focus, &:active {
+        outline: 0;
+    }
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: $primary;
+        transition: $transition-base;
+        border-radius: 2px;
+    }
+    .is-show & {
+        span {
+            &:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+            &:nth-child(2), &:nth-child(3) {
+                opacity: 0;
+            }
+            &:nth-child(4) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+    }
+}

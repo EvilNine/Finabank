@@ -1,0 +1,23 @@
+.alert {
+    border: 1px solid $gray-500;
+    padding: 1.625rem 2.75rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    @media (max-width: 565px) {
+        padding: 1rem;
+        margin: 0 -14px;
+        border-radius: 0;
+    }
+    &-info {
+        background-color: #E7F0FE;
+        [data-theme="dark"] & {
+            background-color: #343B49;
+        }
+    }
+    &-danger {
+        background-color: #F6F0FE;
+        [data-theme="dark"] & {
+            background-color: #343B49;
+        }
+    }
+}

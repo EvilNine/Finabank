@@ -1,0 +1,496 @@
+// Colors
+$primary: 				var(--primary);
+$primary-hover:			var(--primary-hover);
+$secondary: 			var(--secondary);
+$danger: 				var(--danger);
+$warning:				var(--warning);
+$black: 				var(--black);
+$white: 				var(--white);
+$info: 					var(--info);
+$gray-700: 				var(--gray-700);
+$gray-600: 				var(--gray-600);
+$gray-500: 				var(--gray-500);
+$gray-400: 				var(--gray-400);
+$gray-300: 				var(--gray-300);
+$gray-200: 				var(--gray-200);
+
+$body-bg: 				var(--body-bg);
+$bg: 					$white;
+$theme-primary: 		$primary;
+$theme-on-primary: 		$white;
+$active-color: 			$warning;
+$text-color1: 			$black;
+$text-color2: 			var(--text-color2);
+$text-color3: 			$gray-600;
+$link-color-active: 	$secondary;
+$footer-link: 			var(--footer-link);
+
+$tns-slider-overlay: 	var(--tns-slider-overlay);
+$tns-pag-bg-active: 	var(--tns-pag-bg-active);
+$tns-pag-bg: 			var(--tns-pag-bg);
+
+$header-bg: 			var(--header-bg);
+$header-icon: 			var(--header-icon);
+$header-color: 			var(--header-color);
+$header-color-active: 	var(--header-color-active);
+$header-links-bg: 		var(--header-links-bg);
+$header-links-border:	var(--header-links-border);
+$header-border:			var(--header-border);
+
+$footer-icon-bg: 		var(--footer-icon-bg);
+$footer-text-color: 	var(--footer-text-color);
+$footer-border: 		var(--footer-border);
+$footer-social-color: 	var(--footer-social-color);
+
+$logo-title: 			var(--logo-title);
+
+$table-bg: 				var(--table-bg);
+$table-border: 			var(--table-border);
+$table-color: 			var(--table-color);
+$table-th-color: 		var(--table-th-color);
+
+$form-bg: 				var(--input-bg);
+$form-border: 			var(--input-border);
+$input-color: 			var(--input-color);
+$input-placeholder: 	var(--input-color);
+$input-error-color: 	var(--input-error);
+
+$checkbox-bg: 				var(--checkbox-bg);
+$checkbox-bg-active: 		var(--checkbox-bg-active);
+$checkbox-border: 			var(--checkbox-border);
+$checkbox-border-active: 	var(--checkbox-border-active);
+$checkbox-icon: 			var(--checkbox-icon);
+$checkbox-color: 			var(--checkbox-color);
+
+$border-color: 				var(--border-color);
+
+$icon-color: 			$primary;
+
+$sidebar-filter-bg: 		var(--sidebar-filter-bg);           
+$sidebar-filter-dropdown:	var(--sidebar-filter-dropdown);     
+$sidebar-filter-border: 	var(--sidebar-filter-border);
+$sidebar-filter-color:    	var(--sidebar-filter-color);
+$sidebar-filter-icon:       var(--sidebar-filter-icon);
+
+$article-nav-border: 		var(--article-nav-border);
+$article-nav-color: 		var(--article-nav-color);
+$article-nav-icon: 			var(--article-nav-icon);
+$article-nav-active: 		var(--article-nav-active);
+$article-tag-bg:	 		var(--article-tag-bg);
+$article-tag-color: 		var(--article-tag-color);
+$article-content-bg: 		var(--article-content-bg);
+$article-text-color:		var(--article-text-color);
+$article-badge-bg: 			var(--article-badge-bg);
+$article-badge-color: 		var(--article-badge-color);
+$article-total-color:		var(--article-total-color);
+
+$overlay-bg: 				var(--overlay-bg);
+
+$multiselect-border: 		var(--multiselect-border);
+
+$btn-primary-bg: 				var(--btn-primary-bg);
+$btn-primary-border: 			var(--btn-primary-border);
+$btn-primary-color:				var(--btn-primary-color);
+$btn-primary-bg-hover: 			var(--primary-hover);
+$btn-primary-border-hover: 		var(--primary-hover);
+
+$btn-primary-outline-bg: 			var(--primary-outline-bg);
+$btn-primary-outline-border: 		var(--primary-outline-border);
+$btn-primary-outline-color: 		var(--primary-outline-color);
+$btn-primary-outline-hover-bg: 		var(--primary-outline-hover-bg);
+$btn-primary-outline-hover-color: 	var(--primary-outline-hover-color);
+
+$btn-alternative-bg: 			var(--alternative-bg);
+$btn-alternative-border: 		var(--alternative-border);
+$btn-alternative-color: 		var(--alternative-color);
+$btn-alternative-color-hover: 	var(--alternative-color-hover);
+$btn-alternative-bg-hover: 		var(--alternative-bg-hover);
+
+$btn-compare-color: 			var(--compare-color);
+
+$btn-light-bg: 					var(--btn-light-bg);
+$btn-light-border: 				var(--btn-light-border);
+$btn-light-color:	 			var(--btn-light-color);
+
+$btn-gray-bg: 					var(--btn-gray-bg); 	
+$btn-gray-border: 				var(--btn-gray-border); 	
+$btn-gray-color: 				var(--btn-gray-color); 	
+$btn-gray-border-hover:			var(--btn-gray-border-hover); 	
+
+$btn-vacancy-bg: 				var(--btn-vacancy-bg);
+$btn-vacancy-color: 			var(--btn-vacancy-color);
+$btn-vacancy-border: 			var(--btn-vacancy-border);
+$btn-vacancy-active-bg:			var(--btn-vacancy-active-bg);
+$btn-vacancy-active-border:		var(--btn-vacancy-active-border);
+
+
+$light-outline-bg: 				var(--light-outline-bg);
+$light-outline-border: 			var(--light-outline-border);
+$light-outline-color: 			var(--light-outline-color);
+
+$gray-outline-bg: 				var(--gray-outline-bg);
+$gray-outline-border: 			var(--gray-outline-border);
+$gray-outline-color: 			var(--gray-outline-color);
+
+$pagination-bg: 				var(--pagination-bg);
+$pagination-border: 			var(--pagination-border);
+$pagination-color: 				var(--pagination-color);
+$pagination-border-active: 		var(--pagination-border-active);
+$pagination-description: 		var(--pagination-description);
+
+$btn-dark-bg: transparent;
+$btn-dark-border: $black;
+$btn-dark-color: $black;
+
+$dropdown-color: 		var(--dropdown-color);
+$dropdown-border: 		var(--dropdown-border);
+$dropdown-bg: 			var(--dropdown-bg);
+$dropdown-icon: 		var(--dropdown-icon);
+
+$tooltip-bg: 			var(--tooltip-bg);
+$tooltip-color: 		var(--tooltip-color);
+$tooltip-border: 		var(--tooltip-border);
+
+$arrow-bg: 				var(--arrow-bg);
+$arrow-border: 			var(--arrow-border);
+$arrow-color: 			var(--arrow-color);
+
+$tab-bg-active: 		var(--tab-bg-active);
+$tab-color: 			var(--tab-color);
+$tab-color-active: 		var(--tab-color-active);
+
+$tag-bg: 				var(--tag-bg);
+$tag-bg-disabled: 		var(--tag-bg-disabled);
+$tag-shadow: 			var(--tag-shadow);
+$tag-icon: 				var(--tag-icon);
+$tag-border: 			var(--tag-border);
+$tag-hover: 			var(--tag-hover);
+$tag-border-active: 	var(--tag-border-active);
+$tag-border-primary: 	var(--tag-border-primary);
+$tag-color: 			var(--tag-color);
+$tag-color-hover: 		var(--tag-color-hover);
+$tag-color-disabled: 	var(--tag-color-disabled);
+
+$sidebar-tab-bg: 		var(--sidebar-tab-bg);
+$sidebar-tab-color: 	var(--sidebar-tab-color);
+$sidebar-tab-border: 	var(--sidebar-tab-border);
+$sidebar-tab-bg-active: 	var(--sidebar-tab-bg-active);
+$sidebar-tab-color-active: 	var(--sidebar-tab-color-active);
+$sidebar-tab-border-active: var(--sidebar-tab-border-active);
+
+$card-bg: 				var(--card-bg);
+$card-border: 			var(--card-border);
+$card-border-hover: 	var(--card-border-hover);
+$card-shadow: 			var(--card-shadow);
+$card-icon: 			var(--card-icon);
+
+$card-title: 			var(--card-title);
+$card-description: 		var(--card-description);
+
+$h3-color: 				var(--h3-color);
+
+$leader-color: 			var(--leader-color);
+$leader-val: 			var(--leader-val);
+$leader-dots: 			var(--leader-dots);
+
+$select-bg: 			var(--select-bg);
+$select-border: 		var(--select-border);
+$select-color: 			var(--select-color);
+		
+$range-bg: 				var(--range-bg);
+$range-active: 			var(--range-active);
+$range-value-border: 	var(--range-value-border);
+$range-value-color: 	var(--range-value-color);
+
+$arrow-nav-bg: 			var(--arrow-nav-bg);
+$arrow-nav-border: 		var(--arrow-nav-border);
+$arrow-nav-color: 		var(--arrow-nav-color);
+$arrow-nav-shadow: 		var(--arrow-nav-shadow);
+
+$progress-danger: 		var(--progress-danger);
+$progress-success: 		var(--progress-success);
+$progress-warning: 		var(--progress-warning);
+
+$scrollbar-bg: 			var(--scrollbar-bg);
+$scrollbar-track: 		var(--scrollbar-track);
+
+$label-color: var(--label-color);
+
+$vacancy-title-color: 		var(--vacancy-title-color);
+$vacancy-description-color: var(--vacancy-description-color);
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-pointer-cursor-for-buttons: true !default;
+$enable-print-styles: true !default;
+$enable-responsive-font-sizes: true !default;
+$enable-validation-icons: true !default;
+$enable-deprecation-messages: true !default;
+
+// burger
+$burger-width: 34px;
+$burger-height: 34px;
+$burger-thickness: 2px;
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+	(
+		0: 0,
+		1: $spacer * 0.25,
+		2: $spacer * 0.5,
+		3: $spacer,
+		4: $spacer * 1.5,
+		5: $spacer * 3,
+		6: $spacer * 4.375,
+	),
+	$spacers
+);
+
+// Border radius
+
+$border-radius: .75rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: 1.5rem;
+
+// Fonts
+$font-family-sans-serif: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+	"Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+$font-family-alternative: 'Mulish', sans-serif;
+
+// Font weight
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 800 !default;
+$font-weight-black: 900 !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$headings-margin-bottom: 1rem !default;
+$headings-font-family: null !default;
+$headings-font-weight: $font-weight-bold !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+$paragraph-margin-bottom: 1rem !default;
+
+$dt-font-weight: $font-weight-bold !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 1.75 !default;
+$h3-font-size: $font-size-base * 1.25 !default;
+$h4-font-size: $font-size-base * 1.125 !default;
+$h5-font-size: $font-size-base * 1 !default;
+
+// Links
+$link-color: $black !default;
+$link-decoration: none !default;
+$link-hover-color: $theme-primary !default;
+$link-hover-decoration: underline !default;
+
+// Table
+$table-cell-padding: 0.75rem !default;
+$table-cell-padding-sm: 0.3rem !default;
+$table-caption-color: $text-color3 !default;
+
+// Tags
+$tag-simple-border: 		var(--tag-simple-border);
+$tag-simple-border-active: 	var(--tag-simple-border-active);
+$tag-simple-bg: 			var(--tag-simple-bg);
+$tag-simple-color: 			var(--tag-simple-color);
+$tag-simple-shadow: 		var(--tag-simple-shadow);
+
+// Forms
+$label-margin-bottom: 0.5rem !default;
+
+$input-height: 46px;
+$input-padding-y: .75rem !default;
+$input-padding-x: 1.125rem !default;
+$input-font-size: 1rem !default;
+$input-font-weight: $font-weight-base;
+$input-line-height: 1.5 !default;
+$input-border-width: 1px;
+$input-border-radius: 0.75rem;
+$input-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
+
+$multipleSelect-bg: 	var(--multipleSelect-bg);
+$multipleSelect-border: var(--multipleSelect-border);
+$multipleSelect-color: 	var(--multipleSelect-color);
+$multipleSelect-padding: .75rem 1rem;
+
+
+// Grid
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 28px !default;
+$container-max-widths: (
+	// sm: 540px,
+	// md: 720px,
+	// lg: 960px,
+	xl: 1200px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// Display
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+
+// Breadcrumbs
+$breadcrumb-font-size: 0.875rem;
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding-x: 0.5rem;
+$breadcrumb-margin-bottom: 1.875rem;
+$breadcrumb-bg: null;
+$breadcrumb-divider-color: $text-color2;
+$breadcrumb-active-color: $text-color2;
+$breadcrumb-divider: quote("-");
+$breadcrumb-divider-flipped: $breadcrumb-divider;
+$breadcrumb-border-radius: null;
+
+// Zindex
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-offcanvas-backdrop: 1040 !default;
+$zindex-offcanvas: 1045 !default;
+$zindex-modal-backdrop: 1050 !default;
+$zindex-modal: 1055 !default;
+$zindex-popover: 1070 !default;
+$zindex-tooltip: 1080 !default;
+
+// Dropdown
+$dropdown-min-width: 10rem;
+$dropdown-padding-x: 0;
+$dropdown-padding-y: 0rem;
+$dropdown-spacer: 0.125rem;
+$dropdown-font-size: $font-size-base;
+$dropdown-bg: $bg;
+$dropdown-border-color: $select-border;
+$dropdown-border-radius: $border-radius;
+$dropdown-border-width: $form-border;
+$dropdown-inner-border-radius: subtract($dropdown-border-radius, $dropdown-border-width);
+$dropdown-divider-bg: $dropdown-border-color;
+$dropdown-divider-margin-y: $spacer * 0.5;
+
+// Transition
+$transition-base: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-fade: opacity 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-border: border-color 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-collapse: height 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-collapse-width: width 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-color: color 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+$transition-fill: fill 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95) !default;
+
+// Accordion
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.75rem;
+$accordion-color: $black;
+$accordion-bg: $white;
+$accordion-border-width: 1px;
+$accordion-border-color: $gray-300;
+$accordion-border-radius: 10px;
+$accordion-inner-border-radius: 12px;
+
+$accordion-body-padding-y: $accordion-padding-y;
+$accordion-body-padding-x: $accordion-padding-x;
+
+$accordion-button-padding-y: $accordion-padding-y;
+$accordion-button-padding-x: $accordion-padding-x;
+$accordion-button-color: $accordion-color;
+$accordion-button-bg: $accordion-bg;
+$accordion-transition: $transition-base;
+$accordion-button-active-bg: $white;
+$accordion-button-active-color: shade-color($primary, 10%);
+
+$accordion-icon-width: 0.75rem;
+$accordion-icon-height: 0.375rem;
+$accordion-icon-color: $black;
+$accordion-icon-active-color: $gray-600;
+$accordion-icon-transition: transform 0.2s ease-in-out;
+$accordion-icon-transform: rotate(-180deg);
+
+// Pagination
+$pagination-padding-y: 0.375rem;
+$pagination-padding-x: 0.75rem;
+$pagination-padding-y-sm: 0.25rem;
+$pagination-padding-x-sm: 0.5rem;
+$pagination-padding-y-lg: 0.75rem;
+$pagination-padding-x-lg: 1.5rem;
+
+// $pagination-color: $link-color;
+// $pagination-bg: $white;
+$pagination-border-width: 1px;
+$pagination-border-radius: 10px;
+$pagination-margin-start: -$pagination-border-width;
+$pagination-border-color: $gray-500;
+
+$pagination-focus-color: $link-hover-color;
+$pagination-focus-bg: $gray-200;
+$pagination-focus-outline: 0;
+
+$pagination-hover-color: $link-hover-color;
+$pagination-hover-bg: $gray-200;
+$pagination-hover-border-color: $gray-500;
+
+$pagination-active-color: $black;
+//$pagination-active-bg:              $component-active-bg;
+//$pagination-active-border-color:    $pagination-active-bg;
+
+$pagination-disabled-color: $gray-600;
+$pagination-disabled-bg: $white;
+$pagination-disabled-border-color: $gray-300;
+
+$pagination-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+
+// Rating
+$stars: 5;
+$star-size: 40px;
+$star-spacing: 2px;
+$star-on-color: #F9DF4A;
+$star-off-color: #CCCCCC;
+
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+
+// Tootips
+$tooltip-font-size:                 $font-size-sm;
+$tooltip-max-width:                 200px;
+$tooltip-color:                     var(--tip-color);
+$tooltip-bg:                        var(--tip-bg);
+$tip-count-bg: 						var(--tip-count-bg);
+$tooltip-border-radius:             $border-radius-sm;
+$tooltip-opacity:                   .9;
+$tooltip-padding-y:                 $spacer * .25;
+$tooltip-padding-x:                 $spacer * .5;
+$tooltip-margin:                    null; 
+$tooltip-arrow-width:               .8rem;
+$tooltip-arrow-height:              .4rem;

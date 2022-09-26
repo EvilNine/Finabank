@@ -1,0 +1,48 @@
+// nav[aria-label="breadcrumb"] {
+//     @media (max-width: 1199px) {
+//         margin: 0 -14px;
+//     }
+// }
+.breadcrumb {
+    // display: flex;
+    
+    position: relative;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space:  nowrap;
+
+    padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+    margin-bottom: $breadcrumb-margin-bottom;
+    margin-left: 0;
+    @include font-size($breadcrumb-font-size);
+    list-style: none;
+    background-color: $breadcrumb-bg;
+    
+    padding-right: 14px;
+    margin-right: -14px;
+    &::-webkit-scrollbar { 
+        width: 0 !important
+    }
+    @media (max-width: 1199px) {
+        margin-bottom: 1.125rem;
+    }
+}
+
+.breadcrumb-item {
+    flex: 0 0 auto;
+    & + .breadcrumb-item {
+        padding-left: $breadcrumb-item-padding-x;
+
+        &::before {
+            float: left;
+            padding-right: $breadcrumb-item-padding-x;
+            color: $breadcrumb-divider-color;
+            content: $breadcrumb-divider;
+        }
+    }
+
+    &.active {
+        color: $breadcrumb-active-color;
+    }
+}

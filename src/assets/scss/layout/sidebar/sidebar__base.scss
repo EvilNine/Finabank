@@ -1,0 +1,21 @@
+.sidebar {
+    background: $bg;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px $tag-shadow;
+    &__section {
+        border-bottom: 1px solid $gray-400;
+    }
+    &__container {
+        background: $bg;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px $tag-shadow;
+        @media (max-width: 767px) {
+            margin: 0 -14px;
+            border-radius: 0;
+        }
+    }
+}

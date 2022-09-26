@@ -1,0 +1,18 @@
+.social__link {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 28px;
+    &.telegram {
+        background-color: #2F89CE;
+    }
+    &.vk {
+        background-color: #7294C7;
+    }
+    &.instagram {
+        background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+    }
+    &.mymir {
+        background-color: #F59124;
+    }
+}

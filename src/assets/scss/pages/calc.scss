@@ -1,0 +1,125 @@
+.calc__page {
+    &-nav {
+        margin-right: 1.5rem;
+        @media (max-width: 767px) {
+            margin-right: .875rem;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 76.924%;
+        [data-theme="light"] & {
+            background-image: url(../img/calc__img-light.png)
+        }
+        [data-theme="dark"] & {
+            background-image: url(../img/calc__img-dark.png)
+        }
+    }
+}
+
+.calc {
+    background: $bg;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px $tag-shadow;
+    @media (max-width: 767px) {
+        border-radius: 0;
+        margin: 0 -14px;
+    }
+    &__header {
+        border-bottom: 1px solid $border-color;
+        
+    }
+    &__content {
+        &-buttons {
+            gap: .875rem;
+            .btn__radio {
+                flex-grow: 1;
+            }
+            @media (max-width: 767px) {
+                border-bottom: 1px solid $border-color;
+                margin: 0 -1rem;
+                padding: 0 1rem;
+            }
+        }
+    }
+    &__field {
+        @media (max-width: 767px) {
+            border-bottom: 1px solid $border-color;
+            margin: 0 -1rem;
+            padding: 0 1rem 1rem;
+        }
+        &-wrap {
+            position: relative;
+            
+        }
+        
+        &-label {
+            font-weight: $font-weight-semibold;
+            color: $gray-600;
+            margin-bottom: .25rem;
+            @media (max-width: 767px) {
+                margin-bottom: .875rem;
+            }
+        }
+        .range__value {
+            // background-color: transparent;
+            // border: 1px solid $gray-500;
+            width: 100%;
+            font-size: .875rem;
+            font-weight: $font-weight-semibold;
+            text-align: left;
+            border-radius: 10px;
+            padding: 0.719rem 1rem;
+        }
+        .range__input {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            margin: 0;
+            bottom: -2px;
+            width: auto;
+            
+        }
+        &-min {
+            width: 58px;
+            flex: 0 0 58px;
+            .range__value {
+                padding-left: .25rem;
+                padding-right: .25rem;
+                text-align: center;
+            }
+        }
+    }
+    &__total {
+        @media (max-width: 767px) {
+            padding-top: .75rem;
+        }
+        &-field {
+            border-top: 1px solid $range-value-border;
+            padding: 1rem 0;
+            @media (max-width: 767px) {
+                border-top: 0;
+                padding: .5rem 0;
+            }
+            &:first-child {
+                border-top: 0;
+            }
+        }
+        &-label {
+            color: $gray-700;
+            font-size: .75rem;
+            font-weight: $font-weight-semibold;
+        }
+        &-value {
+            color: $black;
+            font-size: .875rem;
+            font-weight: $font-weight-semibold;
+        }
+    }
+    
+}

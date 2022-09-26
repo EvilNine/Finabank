@@ -1,0 +1,139 @@
+.multipleSelect {
+    position: relative;
+    &__btn {
+        background: $multipleSelect-bg;
+        border: 1px solid $multipleSelect-border;
+        min-width: 100%;
+        width: 100%;
+        text-align: left;
+        z-index: 1;
+        color: $multipleSelect-color;
+        line-height: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: $multipleSelect-padding;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        position: relative;
+        &.show {
+            border-radius: .75rem .75rem 0 0;
+            .multipleSelect__btn-caret {
+                transform: rotate(180deg);
+            }
+        }
+        &.disabled {
+            cursor: default;
+            opacity: .4;
+        }
+        &:focus {
+            outline: 0;
+        }
+        &-title {
+
+        }
+        &-count {
+            background-color: $multipleSelect-bg;
+            color: $primary;
+            padding: 0 4px;
+            position: absolute;
+            right: .8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        &-caret {
+            width: 12px;
+            height: 6px;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            margin-top: -3px;
+            svg {
+                fill: $arrow-color;
+                display: block;
+            }
+        }
+    }
+    &__content {
+        background-color: $multipleSelect-bg;
+        border: 1px solid $multipleSelect-border;
+        border-top: 0;
+        background-clip: padding-box;
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        font-size: 11px;
+        overflow: hidden;
+        
+        display: none;
+        border-radius: 0 0 .75rem .75rem;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        max-height: 200px;
+        .is-active & {
+            visibility: visible;
+            display: block;
+        }
+    }
+    &__list {
+        user-select: none;
+        white-space: nowrap;
+        margin: 0px;
+        padding: 0;
+        cursor: pointer;
+        overflow-y: auto;
+    }
+    &__item {
+        background-color: $multipleSelect-bg;
+        border-top: 1px solid $multipleSelect-border;
+        font-size: 1rem;
+        font-weight: 600;
+        position: relative;
+        min-height: 1.4em;
+        padding: 0.688rem 2.75rem 0.688rem 1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        color: $multipleSelect-color;
+        margin: 0;
+        cursor: pointer;
+        &:first-child {
+            border-top: 0;
+        }
+        &-checkbox {
+            position: absolute;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            &:checked + .multipleSelect__item-check {
+                background-color: $primary;
+                border-color: $secondary;
+                svg {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        &-check {
+            border: 1px solid $gray-500;
+            width: 22px;
+            height: 22px;
+            flex: 0 0 22px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 14px;
+            top: 12px;
+            transition: background .2s cubic-bezier(0.445, 0.05, 0.55, 0.95), border .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            svg {
+                fill: $white;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity .2s cubic-bezier(0.445, 0.05, 0.55, 0.95), visibility .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            }
+        }
+    }
+}

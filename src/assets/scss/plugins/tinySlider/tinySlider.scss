@@ -1,0 +1,101 @@
+@import "base";
+
+.wellcome__slider {
+    position: relative;
+    @media (max-width: 575px) {
+        margin: 0 calc(-1 * $grid-gutter-width / 2);
+    }
+    .tns-ovh {
+        position: relative;
+        overflow: hidden;
+        @media (min-width: 576px) {
+            border-radius: 20px;
+        }
+    }
+}
+.slider {
+    &-container {
+        position: relative;
+        overflow: hidden;
+    }
+    &__item {
+        @media (min-width: 576px) {
+            padding: 0 25px;
+        }
+        &-content {
+            background-color: $bg;
+            @media (min-width: 576px) {
+                border-radius: 20px;  
+            }
+            @media (max-width: 575px) {
+                background-color: transparent;
+                .btn {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            img {
+                max-width: 100%;
+            }  
+            
+        }
+        @media (max-width: 575px) {
+            &-img {
+                background-color: $bg;
+                max-height: 155px;
+                img {
+                    max-height: 100%;
+                }
+            }
+        }
+        
+    }
+    
+    // .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active  {
+        
+    //     .slider__item-content:after {
+    //         display: none;
+    //     }
+    // }
+    
+    &__button {
+        position: absolute;
+        border: 1px solid $arrow-border;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        background: $arrow-bg;
+        box-shadow: 0px 4px 12px rgba(58, 35, 15, 0.1);
+        border-radius: 48px;
+        z-index: 1;
+        @media (max-width: 575px) {
+            top: 50px;
+            transform: translateY(0%);
+            width: 36px;
+            height: 36px;
+        }
+        &-prev {
+            left: 127px;
+            @media (max-width: 1199px) {
+                left: .2rem;
+            }
+            @media (max-width: 575px) {
+                left: 1rem;
+            }
+        }
+        &-next {
+            right: 127px;
+            @media (max-width: 1199px) {
+                right: .2rem;
+            }
+            @media (max-width: 575px) {
+                right: 1rem;
+            }
+        }
+        svg {
+            fill: $arrow-color;
+        }
+    }
+}

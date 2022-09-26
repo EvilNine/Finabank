@@ -1,0 +1,10 @@
+.sidebar__links {
+    &-item {
+        color: $secondary;
+        display: block;
+        font-weight: $font-weight-semibold;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

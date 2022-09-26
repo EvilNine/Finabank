@@ -1,0 +1,9 @@
+.article__item {
+    &-first {
+        @media (max-width: 767px) {
+            background-color: $white;
+            margin: 0 -14px 1.5rem;
+            padding: 1rem .875rem .875rem;
+        }
+    }
+}

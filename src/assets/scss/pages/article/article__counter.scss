@@ -1,0 +1,21 @@
+.article__counter {
+    gap: 1.25rem;
+    &-title {
+        color: $primary;
+        font-weight: $font-weight-semibold;
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin-bottom: .25rem;
+        @media (max-width: 575px) {
+            font-size: 1.125rem;
+        }
+    }
+    &-content {
+        font-size: .75rem;
+        font-weight: $font-weight-medium;
+        margin: 0;
+        @media (max-width: 575px) {
+            font-size: .625rem;
+        }
+    }
+}

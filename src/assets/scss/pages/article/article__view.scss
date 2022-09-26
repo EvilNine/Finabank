@@ -1,0 +1,17 @@
+.article__view {
+    &-img {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    &-meta {
+
+    }
+    &-date {
+        font-size: .75rem;
+        color: $gray-600;
+    }
+}

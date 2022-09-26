@@ -1,0 +1,30 @@
+.leaders {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__item {
+        align-items: baseline;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1;
+        &::before {
+            border-bottom: 1px dashed $leader-dots;
+            content: "";
+            flex-grow: 1;
+            height: 1em;
+            order: 2;
+            margin: 0 10px;
+        }
+        &-title {
+            color: $leader-color;
+            font-weight: $font-weight-semibold;
+            font-size: .875rem;
+        }
+        &-value {
+            color: $leader-val;
+            order: 3;
+            padding-top: 0.5em;
+            font-size: .875rem;
+        }
+    }
+}

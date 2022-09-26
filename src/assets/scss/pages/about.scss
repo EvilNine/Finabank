@@ -1,0 +1,158 @@
+
+.about {
+    
+    // background-image: url(../img/about__image-full.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 15% 63%;
+    padding: 30px 0 100px;
+    position: relative;
+    overflow: hidden;
+    &.main__about {
+        background-color: $bg;
+        padding: 100px 0;
+    }
+    [data-theme="light"] & {
+        background-image: url(../img/about__image-light.png);
+    }
+    [data-theme="dark"] & {
+        background-image: url(../img/about__image-dark.png);
+    }
+    @media (max-width: 1680px) {
+        background-position: 2% 63%;
+    }
+    @media (max-width: 1500px) {
+        background-position: -15% 63%;
+    }
+    @media (max-width: 1400px) {
+        background-position: -19%  63%;
+    }
+    @media (max-width: 1240px) {
+        background-position: -30%  63%;
+    }
+    // @media (max-width: 1240px) {
+    //     background-position: -125% 63%;
+
+    // }
+    @media (max-width: 1199px) {
+        background-size: 75%;
+        background-position: -68% 63%;
+    }
+    @media (max-width: 991px) {
+        background-size: 70%;
+        background-position: -41% 63%;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+        background-size: 740px;
+        background-position: 50% -75px;
+        padding-top: 460px !important;
+    }
+    @media (max-width: 500px) {
+        background-position: 60% -45px;
+        background-size: 520px;
+        padding-top: 350px !important;
+    }
+    @media (max-width: 340px) {
+        background-size: 445px;
+        background-position: 65% -43px;
+        padding-top: 300px !important;
+    }   
+}
+.about__img {
+    text-align: center;
+    position: relative;
+
+    // &.about__scene {
+    //     position: relative;
+    //     height: 100%;
+    //     .layer {
+    //         position: absolute;
+    //         inset: 0;
+    //     }
+    // }
+    // &-main {
+    //     position: relative;
+    //     z-index: 2;
+    // }
+    // &-layer {
+    //     position: absolute;
+    //     &.layer__save, &.layer__mood {
+            
+    //         -webkit-backdrop-filter: blur(7px);
+	// 		backdrop-filter: blur(7px);
+	// 		background-color: rgba(255,255,255, 0.3);
+
+    //         border-radius: 16px;
+    //         border: 1.5px solid rgba(255,255,255,.5);
+    //         overflow: hidden;
+    //         z-index: 3;
+    //         .about__img-bg {
+    //             background: url(../img/pattern.png) repeat;
+    //             position: absolute;
+    //             inset: 0;
+    //             mix-blend-mode: overlay;
+    //             opacity: .2;
+    //         }
+    //     }
+    //     &.layer__save {
+    //         padding: 24px 25px 35px;
+    //         left: 2px;
+    //         top: 209px;
+    //     }
+    //     &.layer__mood {
+    //         padding: 20px 35px 23px;
+    //         padding: 20px 38px 23px;
+    //         bottom: -30px;
+    //         right: -7px;
+    //     }
+    //     &.layer1 {
+    //         right: 98px;
+    //         top: 90px;
+    //         filter: blur(200px);
+    //     }
+    //     &.layer2 {
+    //         left: 49px;
+    //         top: 117px;
+    //         filter: blur(138px);
+    //     }
+    //     &.layer3 {
+    //         right: 98px;
+    //         bottom: 16px;
+    //         filter: blur(100px);
+    //     }
+    //     &.layer4 {
+    //         right: -78px;
+    //         top: 105px;
+    //         z-index: 1;
+    //     }
+    //     .layer__save {
+    //         svg {
+    //             position: relative;
+    //         }
+    //         &-title {
+    //             position: relative;
+    //             font-size: 1.5rem;
+    //             line-height: 1;
+    //             margin-top: 13px;
+    //             margin-bottom: 4px;
+    //         }
+    //         &-text {
+    //             position: relative;
+    //         }
+    //     }
+    //     .layer__mood {
+    //         svg {
+    //             position: relative;
+    //         }
+    //         &-title {
+    //             position: relative;
+    //             margin-bottom: 6px;
+    //         }
+    //         &-text {
+    //             position: relative;
+    //         }
+    //     }
+        
+    // }
+}

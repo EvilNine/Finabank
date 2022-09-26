@@ -1,0 +1,134 @@
+.main__news {
+    &-wrap {
+        @media (min-width: 1200px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 28px 28px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "div1 div1 div2 div3"
+                "div1 div1 div4 div5";
+            .div1 { grid-area: div1; }
+            .div2 { grid-area: div2; }
+            .div3 { grid-area: div3; }
+            .div4 { grid-area: div4; }
+            .div5 { grid-area: div5; }
+        }
+        @media (max-width: 1199px) {
+            margin: 0 -8px;
+            //padding-bottom: 45px;
+        }
+        
+    }
+    &-item {
+        position: relative;
+        @media (max-width: 1199px) {
+            width: 246px;
+            flex: 0 0 246px;
+            padding: 0 8px;
+        }
+        &:first-child {
+            .news__item-content {
+                display: block;
+            }
+            .card__date span {
+                display: inline;
+            }
+        }
+        .news__item-content, .card__date span {
+            display: none;
+        }
+    
+    }
+    
+    
+}
+
+.news__item {
+    &-img {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 50%;
+        @media (max-width: 1199px) {
+            height: 110px;
+            border-radius: 10px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-title {
+        
+        font-weight: $font-weight-semibold;
+        line-height: 1.344rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        transition: .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        &:hover {
+            text-decoration: none;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &-wrap {
+        padding-bottom: 40px;
+        @media (max-width: 1199px) {
+            padding: 16px 16px 40px 16px;
+        }
+    }
+    &-content {
+        @media (max-width: 1199px) {
+            display: none !important;
+        }
+        p {
+            color: $text-color2;
+            margin-bottom: .5rem;
+        }
+    }
+    &-footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 20px 10px;
+    }
+    .card__date {
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+    &-views {
+        font-size: 0.75rem;
+        color: $icon-color;
+        svg {
+            fill: $icon-color;
+        }
+    }
+    &-comment {
+        font-size: 0.75rem;
+        color: $icon-color;
+        svg {
+            fill: $icon-color
+        }
+    }
+    &-like {
+        font-size: 0.75rem;
+        color: $icon-color;
+        svg {
+            fill: #F64D4D;
+        }
+    }
+    
+}

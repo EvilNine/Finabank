@@ -1,0 +1,60 @@
+.offer__item {
+    background: $card-bg;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px $card-shadow;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    &-header {
+        border-bottom: 1px solid $article-nav-border;
+        padding: .75rem;
+        .card__like svg {
+            fill: $card-icon;
+        }
+    }
+    &-img {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        margin-right: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-title {
+        font-size: .75rem;
+        
+    }
+
+    &-body {
+        padding: .875rem .75rem;
+        
+        p {
+            margin: 0;
+            &.txt1 {
+                color: $article-nav-color;
+                font-size: .75rem;
+                font-weight: $font-weight-medium;
+            }
+            &.txt2 {
+                color: $primary;
+                font-size: 1.75rem;
+                font-weight: $font-weight-semibold;
+                margin: 0.313rem 0 .5rem;
+            }
+            &.txt3 {
+                font-size: .875rem;
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+    &-footer {
+        padding: 0 .75rem .875rem;
+    }
+}

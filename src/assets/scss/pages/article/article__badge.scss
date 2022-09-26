@@ -1,0 +1,25 @@
+.article__badge {
+    display: flex;
+    @media (max-width: 575px) {
+        width: 100%;
+        justify-content: center;
+        padding-top: .75rem;
+    }
+    &-item {
+        background: $article-badge-bg;
+        color: $article-badge-color;
+        border-radius: 17px;
+        height: 17px;
+        padding: 0 .5rem;
+        font-size: .75rem;
+        margin: .25rem 0 .25rem .5rem;
+        transition: $transition-base;
+        &[href] {
+            &:hover {
+                background-color: $primary;
+                color: $article-badge-bg;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,383 @@
+---
+layout: default
+title: Finabank
+---
+
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="horizontal__scroll">
+        <ol class="breadcrumb horizontal__scroll-container">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Вакансии</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- page header -->
+<div class="page__heading mb-4">
+    <div class="container">
+        <h1 class="page__heading-title mb-4">Вакансии</h1>
+
+        <!-- filter form -->
+        <div class="form">
+            <form action="">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 mb-3 mb-md-0">
+                        <select name="" class="styledSelect" placeholder="">
+                            <option value="">Категория</option>
+                            <option value="1">IT</option>
+                            <option value="2">Design</option>
+                            <option value="3">Design</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-6 col-xl-7 mb-3 mb-md-0">
+                        <div class="search__field">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.7575 14.5757C15.5232 14.3414 15.1433 14.3414 14.909 14.5757C14.6746 14.81 14.6746 15.1899 14.909 15.4243L15.7575 14.5757ZM18.2422 18.7575C18.4765 18.9919 18.8564 18.9919 19.0907 18.7575C19.325 18.5232 19.3251 18.1433 19.0907 17.909L18.2422 18.7575ZM14.909 15.4243L18.2422 18.7575L19.0907 17.909L15.7575 14.5757L14.909 15.4243ZM8.6665 15.2332C4.85574 15.2332 1.7665 12.144 1.7665 8.33325H0.566504C0.566504 12.8068 4.193 16.4333 8.6665 16.4333V15.2332ZM15.5665 8.33325C15.5665 12.144 12.4773 15.2332 8.6665 15.2332V16.4333C13.14 16.4333 16.7665 12.8068 16.7665 8.33325H15.5665ZM8.6665 1.43325C12.4773 1.43325 15.5665 4.52249 15.5665 8.33325H16.7665C16.7665 3.85974 13.14 0.233252 8.6665 0.233252V1.43325ZM8.6665 0.233252C4.193 0.233252 0.566504 3.85974 0.566504 8.33325H1.7665C1.7665 4.52249 4.85574 1.43325 8.6665 1.43325V0.233252Z" fill="#7B879D"></path>
+                            </svg>
+                            <input type="text" class="search__field-input pl-5 form-control">    
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-3 col-xl-2">
+                        <button class="btn btn-primary btn-block">Показать</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- / filter form -->
+
+    </div>
+</div>
+<!-- / page header -->
+
+<div class="container">
+    <div class="section">
+        <div class="section__header d-flex flex-wrap justify-content-between align-items-center mt-6 mb-4">
+            <h2 class="title mb-3 mb-sm-0">Найдено 24 вакансии</h2>
+            <div class="section__header-dropdown dropdown col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 px-0">
+                <button class="dropdown-btn d-flex align-items-center justify-content-between" type="button" 
+                    data-bs-toggle="dropdown" 
+                    data-bs-auto-close="true" 
+                    data-bs-display="static" 
+                    aria-expanded="false">
+                    Популярные
+                    <div class="dropdown-icon">
+                        <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6h-.4C4.4 5.8 3.5 5 2 3.5L.3 1.7C-.1 1.3-.1.7.3.3c.4-.4 1-.4 1.4 0l1.7 1.8C4.6 3.2 5.3 3.9 5.8 4h.4c.5-.1 1.2-.8 2.4-1.9L10.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L10 3.5C8.5 5 7.6 5.8 6.4 6H6Z"></path>
+                        </svg>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Популярные</a></li>
+                    <li><a class="dropdown-item" href="#">Популярные</a></li>
+                    <li><a class="dropdown-item" href="#">Популярные</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- vacancy list -->
+        <div class="vacancy">
+            <!-- item -->
+            <div class="vacancy__item mt-md-3">
+                <!-- item header -->
+                <div class="vacancy__item-header d-md-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="vacancy__item-img mr-3 mr-md-5"><img src="img/vacancy__img.png" alt=""></div>
+                        <div class="vacancy__item-title">
+                            <div class="h2 title mb-2">Экономист со стажем 3 года</div>
+                            <div class="description d-flex">
+                                <div class="description__item">Экономика</div>
+                                <div class="description__item">Москва</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-vacancy-collapse collapsed" data-bs-target="#vacancy__item-1" data-bs-toggle="collapse" aria-expanded="false">
+                        Подробнее
+                        <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg"><path d="M6 6h-.4C4.4 5.8 3.5 5 2 3.5L.3 1.7C-.1 1.3-.1.7.3.3c.4-.4 1-.4 1.4 0l1.7 1.8C4.6 3.2 5.3 3.9 5.8 4h.4c.5-.1 1.2-.8 2.4-1.9L10.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L10 3.5C8.5 5 7.6 5.8 6.4 6H6Z"></path></svg>
+                    </button>
+                </div>
+                <!-- / item header -->
+
+                <!-- item details -->
+                <div id="vacancy__item-1" class="vacancy__item-details collapse">
+                    <div class="wysiwyg px-3 py-4 px-lg-6">
+                        <h4>Требуемый опыт работы: 3 года</h4>
+                        <h4 class="mb-4">Полная занятость, 9 часов в неделю</h4>
+                        <h3>Обязанности:</h3>
+                        <ol>
+                            <li>Работа по сбору и обработке данных, контроль корректности ввода данных;</li>
+                            <li>Работа в Microsoft Excel (формулы, защита данных, сводные таблицы и обработка данных сводных таблиц);</li>
+                            <li>Работа в Google таблицах (формулы, защита данных, сводные таблицы);</li>
+                            <li>1С (желательно).</li>
+                        </ol>
+                        <h3>Требования:</h3>
+                        <ul>
+                            <li>Скрупулезность, педантичность, аккуратность, исполнительность;</li>
+                            <li>Желательно опыт работы с Power Query, Pivot.</li>
+                        </ul>
+                        <h3>Условия:</h3>
+                        <ul>
+                            <li>Оформление по ТК РФ;</li>
+                            <li>Сменный график работы: 1-й день - с 08:00 до 20:00, 2-й день - с 20:00 до 08:00, 3-й и 4-й дни - выходные и т.д.;</li>
+                            <li>Белая заработная плата 2 раза в месяц на карту;</li>
+                            <li>Комфортное рабочее место;</li>
+                            <li>Дружный коллектив, чай, кофе.</li>
+                        </ul>
+
+                        <div class="form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="E-Mail">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" placeholder="Расскажите о себе" rows="4"></textarea>
+                                        <div class="mt-3">
+                                            <button class="btn btn-primary px-5" type="submit">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- / item details -->
+            </div>
+            <!-- / item -->
+
+            <!-- item -->
+            <div class="vacancy__item mt-md-3">
+                <!-- item header -->
+                <div class="vacancy__item-header d-md-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="vacancy__item-img mr-3 mr-md-5"><img src="img/vacancy__img.png" alt=""></div>
+                        <div class="vacancy__item-title">
+                            <div class="h2 title mb-2">Экономист со стажем 3 года</div>
+                            <div class="description d-flex">
+                                <div class="description__item">Экономика</div>
+                                <div class="description__item">Москва</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-vacancy-collapse collapsed" data-bs-target="#vacancy__item-2" data-bs-toggle="collapse" aria-expanded="false">
+                        Подробнее
+                        <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg"><path d="M6 6h-.4C4.4 5.8 3.5 5 2 3.5L.3 1.7C-.1 1.3-.1.7.3.3c.4-.4 1-.4 1.4 0l1.7 1.8C4.6 3.2 5.3 3.9 5.8 4h.4c.5-.1 1.2-.8 2.4-1.9L10.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L10 3.5C8.5 5 7.6 5.8 6.4 6H6Z"></path></svg>
+                    </button>
+                </div>
+                <!-- / item header -->
+
+                <!-- item details -->
+                <div id="vacancy__item-2" class="vacancy__item-details collapse">
+                    <div class="wysiwyg px-3 py-4 px-lg-6">
+                        <h4>Требуемый опыт работы: 3 года</h4>
+                        <h4 class="mb-4">Полная занятость, 9 часов в неделю</h4>
+                        <h3>Обязанности:</h3>
+                        <ol>
+                            <li>Работа по сбору и обработке данных, контроль корректности ввода данных;</li>
+                            <li>Работа в Microsoft Excel (формулы, защита данных, сводные таблицы и обработка данных сводных таблиц);</li>
+                            <li>Работа в Google таблицах (формулы, защита данных, сводные таблицы);</li>
+                            <li>1С (желательно).</li>
+                        </ol>
+                        <h3>Требования:</h3>
+                        <ul>
+                            <li>Скрупулезность, педантичность, аккуратность, исполнительность;</li>
+                            <li>Желательно опыт работы с Power Query, Pivot.</li>
+                        </ul>
+                        <h3>Условия:</h3>
+                        <ul>
+                            <li>Оформление по ТК РФ;</li>
+                            <li>Сменный график работы: 1-й день - с 08:00 до 20:00, 2-й день - с 20:00 до 08:00, 3-й и 4-й дни - выходные и т.д.;</li>
+                            <li>Белая заработная плата 2 раза в месяц на карту;</li>
+                            <li>Комфортное рабочее место;</li>
+                            <li>Дружный коллектив, чай, кофе.</li>
+                        </ul>
+
+                        <div class="form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="E-Mail">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" placeholder="Расскажите о себе" rows="4"></textarea>
+                                        <div class="mt-3">
+                                            <button class="btn btn-primary px-5" type="submit">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- / item details -->
+            </div>
+            <!-- / item -->
+
+            <!-- item -->
+            <div class="vacancy__item mt-md-3">
+                <!-- item header -->
+                <div class="vacancy__item-header d-md-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="vacancy__item-img mr-3 mr-md-5"><img src="img/vacancy__img.png" alt=""></div>
+                        <div class="vacancy__item-title">
+                            <div class="h2 title mb-2">Экономист со стажем 3 года</div>
+                            <div class="description d-flex">
+                                <div class="description__item">Экономика</div>
+                                <div class="description__item">Москва</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-vacancy-collapse collapsed" data-bs-target="#vacancy__item-3" data-bs-toggle="collapse" aria-expanded="false">
+                        Подробнее
+                        <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg"><path d="M6 6h-.4C4.4 5.8 3.5 5 2 3.5L.3 1.7C-.1 1.3-.1.7.3.3c.4-.4 1-.4 1.4 0l1.7 1.8C4.6 3.2 5.3 3.9 5.8 4h.4c.5-.1 1.2-.8 2.4-1.9L10.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L10 3.5C8.5 5 7.6 5.8 6.4 6H6Z"></path></svg>
+                    </button>
+                </div>
+                <!-- / item header -->
+
+                <!-- item details -->
+                <div id="vacancy__item-3" class="vacancy__item-details collapse">
+                    <div class="wysiwyg px-3 py-4 px-lg-6">
+                        <h4>Требуемый опыт работы: 3 года</h4>
+                        <h4 class="mb-4">Полная занятость, 9 часов в неделю</h4>
+                        <h3>Обязанности:</h3>
+                        <ol>
+                            <li>Работа по сбору и обработке данных, контроль корректности ввода данных;</li>
+                            <li>Работа в Microsoft Excel (формулы, защита данных, сводные таблицы и обработка данных сводных таблиц);</li>
+                            <li>Работа в Google таблицах (формулы, защита данных, сводные таблицы);</li>
+                            <li>1С (желательно).</li>
+                        </ol>
+                        <h3>Требования:</h3>
+                        <ul>
+                            <li>Скрупулезность, педантичность, аккуратность, исполнительность;</li>
+                            <li>Желательно опыт работы с Power Query, Pivot.</li>
+                        </ul>
+                        <h3>Условия:</h3>
+                        <ul>
+                            <li>Оформление по ТК РФ;</li>
+                            <li>Сменный график работы: 1-й день - с 08:00 до 20:00, 2-й день - с 20:00 до 08:00, 3-й и 4-й дни - выходные и т.д.;</li>
+                            <li>Белая заработная плата 2 раза в месяц на карту;</li>
+                            <li>Комфортное рабочее место;</li>
+                            <li>Дружный коллектив, чай, кофе.</li>
+                        </ul>
+
+                        <div class="form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="E-Mail">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" placeholder="Расскажите о себе" rows="4"></textarea>
+                                        <div class="mt-3">
+                                            <button class="btn btn-primary px-5" type="submit">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- / item details -->
+            </div>
+            <!-- / item -->
+
+            <!-- item -->
+            <div class="vacancy__item mt-md-3">
+                <!-- item header -->
+                <div class="vacancy__item-header d-md-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="vacancy__item-img mr-3 mr-md-5"><img src="img/vacancy__img.png" alt=""></div>
+                        <div class="vacancy__item-title">
+                            <div class="h2 title mb-2">Экономист со стажем 3 года</div>
+                            <div class="description d-flex">
+                                <div class="description__item">Экономика</div>
+                                <div class="description__item">Москва</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-vacancy-collapse collapsed" data-bs-target="#vacancy__item-4" data-bs-toggle="collapse" aria-expanded="false">
+                        Подробнее
+                        <svg width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg"><path d="M6 6h-.4C4.4 5.8 3.5 5 2 3.5L.3 1.7C-.1 1.3-.1.7.3.3c.4-.4 1-.4 1.4 0l1.7 1.8C4.6 3.2 5.3 3.9 5.8 4h.4c.5-.1 1.2-.8 2.4-1.9L10.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L10 3.5C8.5 5 7.6 5.8 6.4 6H6Z"></path></svg>
+                    </button>
+                </div>
+                <!-- / item header -->
+
+                <!-- item details -->
+                <div id="vacancy__item-4" class="vacancy__item-details collapse">
+                    <div class="wysiwyg px-3 py-4 px-lg-6">
+                        <h4>Требуемый опыт работы: 3 года</h4>
+                        <h4 class="mb-4">Полная занятость, 9 часов в неделю</h4>
+                        <h3>Обязанности:</h3>
+                        <ol>
+                            <li>Работа по сбору и обработке данных, контроль корректности ввода данных;</li>
+                            <li>Работа в Microsoft Excel (формулы, защита данных, сводные таблицы и обработка данных сводных таблиц);</li>
+                            <li>Работа в Google таблицах (формулы, защита данных, сводные таблицы);</li>
+                            <li>1С (желательно).</li>
+                        </ol>
+                        <h3>Требования:</h3>
+                        <ul>
+                            <li>Скрупулезность, педантичность, аккуратность, исполнительность;</li>
+                            <li>Желательно опыт работы с Power Query, Pivot.</li>
+                        </ul>
+                        <h3>Условия:</h3>
+                        <ul>
+                            <li>Оформление по ТК РФ;</li>
+                            <li>Сменный график работы: 1-й день - с 08:00 до 20:00, 2-й день - с 20:00 до 08:00, 3-й и 4-й дни - выходные и т.д.;</li>
+                            <li>Белая заработная плата 2 раза в месяц на карту;</li>
+                            <li>Комфортное рабочее место;</li>
+                            <li>Дружный коллектив, чай, кофе.</li>
+                        </ul>
+
+                        <div class="form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="E-Mail">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" placeholder="Расскажите о себе" rows="4"></textarea>
+                                        <div class="mt-3">
+                                            <button class="btn btn-primary px-5" type="submit">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- / item details -->
+            </div>
+            <!-- / item -->
+        </div>
+        <!-- / vacancy list -->
+    </div>
+</div>
+

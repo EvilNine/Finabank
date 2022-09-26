@@ -1,0 +1,8 @@
+.footer__logoSocial {
+    @media (max-width: 575px) {
+        background-color: $white;
+        margin-left: -.875rem;
+        margin-right: -.875rem;
+        padding: 20px .875rem;
+    }
+}

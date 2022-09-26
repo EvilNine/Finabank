@@ -1,0 +1,119 @@
+.pagination {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	&__container {
+		margin-top: 1.25rem;
+	}
+	&__links {
+		display: flex;
+		&-item {
+			background-color: $pagination-bg;
+			border: 1px solid $pagination-border;
+			border-radius: .5rem;
+			color: $pagination-color;
+			text-decoration: none;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: .5rem;
+			transition: $transition-base;
+			svg {
+				fill: $pagination-color;
+				transition: $transition-base;
+				display: block;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				text-decoration: none;
+				color: $primary;
+				svg {
+					fill: $primary;
+				}
+			}
+			&.current {
+				border-color: $pagination-border-active;
+			}
+		}
+		&-last, &-first {
+			background-color: transparent;
+			border-color: transparent;
+			padding-left: 0.625rem;
+			padding-right: 0.625rem;
+			width: auto;
+		}
+		&-last {
+			svg {
+				margin-left: 0.875rem;
+				transform: rotate(-90deg);
+			}
+		}
+		&-first {
+			svg {
+				margin-right: 0.875rem;
+				transform: rotate(90deg);
+			}
+		}
+	}
+	&__description {
+		color: $pagination-description;
+		font-size: .75rem;
+	}
+}
+
+.page-link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.25rem;
+	color: $pagination-color;
+	fill: $pagination-color;
+	text-decoration: if($link-decoration == none, null, none);
+	background-color: $pagination-bg;
+	border: $pagination-border-width solid $pagination-border-color;
+	min-width: 60px;
+	min-height: 60px;
+	text-align: center;
+	@include transition($pagination-transition);
+
+	&:hover {
+		z-index: 2;
+		color: $pagination-hover-color;
+		fill: $pagination-hover-color;
+		text-decoration: if($link-hover-decoration == underline, none, null);
+		background-color: $pagination-hover-bg;
+		border-color: $pagination-hover-border-color;
+	}
+
+	&:focus {
+		z-index: 3;
+		color: $pagination-focus-color;
+		fill: $pagination-focus-color;
+		background-color: $pagination-focus-bg;
+		outline: $pagination-focus-outline;
+	}
+}
+
+.page-item {
+	&:not(:first-child) .page-link {
+		margin-left: $pagination-margin-start;
+	}
+
+	&.active .page-link {
+		z-index: 3;
+		color: $pagination-active-color;
+		fill: $pagination-active-color;
+	}
+
+	&.disabled .page-link {
+		pointer-events: none;
+	}
+}
+
+@include pagination-size($pagination-padding-y, $pagination-padding-x, null, $pagination-border-radius);

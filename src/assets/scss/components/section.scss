@@ -1,0 +1,18 @@
+.section {
+    margin-bottom: 70px;
+    @media (max-width: 575px) {
+        margin-bottom: 50px;
+    }
+    &__header {
+        h2 {
+            a {
+                color: $primary;
+            }
+        }
+        &-btn {
+            @media (max-width: 575px) {
+                width: 100%;
+            }       
+        }
+    }
+}

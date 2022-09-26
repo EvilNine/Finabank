@@ -1,0 +1,37 @@
+.header {
+    background-color: $header-bg;
+    margin-bottom: 1.688rem;
+    position: relative;
+    user-select: none;
+    z-index: 1040;
+    &.header__v2 {
+        background-color: $body-bg;
+        font-family: $font-family-alternative;
+        @media (max-width: 991px) {
+            background-color: $header-bg;
+            border-bottom: 1px solid $header-border;
+        }    
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        transition: $transition-base;
+        & + .container {
+            margin-top: 94px;
+        }
+        &.header__v2 + .container {
+            margin-top: 59px;
+        }
+        .scroll-up & {
+            position: fixed;
+            transform: translateY(0);
+        }
+        .scroll-down & {
+            // position: fixed;
+            transform: translateY(-100%);
+        }
+    }  
+}

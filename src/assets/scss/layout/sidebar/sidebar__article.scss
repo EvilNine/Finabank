@@ -1,0 +1,7 @@
+.sidebar__article {
+    position: relative;
+    &-date {
+        font-size: .75rem;
+        color: $gray-600;
+    }
+}
