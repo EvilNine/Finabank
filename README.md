@@ -5,6 +5,9 @@
 * чтобы начать работу, введите команду: ```gulp``` (режим разработки)
 * чтобы собрать проект, введите команду ```gulp build --build``` (режим сборки)
 
+## Дизайн макет
+[Figma source link](https://www.figma.com/file/VJOvaeP4qLXshuTHyuYzAA/finabank?node-id=0%3A1)
+
 ## Файловая структура
 
 ```
